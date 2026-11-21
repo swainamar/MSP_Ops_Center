@@ -1,0 +1,7171 @@
+{
+ "format": 1,
+ "rosters": {
+  "ros_758bde7f9b": {
+   "template": "three_shift",
+   "layout": "by_shift",
+   "id": "ros_758bde7f9b",
+   "name": "Unix SA roster",
+   "team": "Unix SA",
+   "start_date": "2026-10-05",
+   "cycle": {
+    "type": "custom",
+    "length_days": 21
+   },
+   "shifts": [
+    {
+     "code": "M",
+     "name": "Morning",
+     "start": "06:00",
+     "end": "15:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#F2C76E",
+     "log_shift": "Morning"
+    },
+    {
+     "code": "A",
+     "name": "Afternoon",
+     "start": "13:00",
+     "end": "22:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#7AA7FF",
+     "log_shift": "Afternoon"
+    },
+    {
+     "code": "N",
+     "name": "Night",
+     "start": "21:30",
+     "end": "06:30",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#A391F5",
+     "log_shift": "Night"
+    }
+   ],
+   "rotation": {
+    "sequence": [
+     "M",
+     "M",
+     "M",
+     "M",
+     "M",
+     "OFF",
+     "OFF",
+     "A",
+     "A",
+     "A",
+     "A",
+     "A",
+     "OFF",
+     "OFF",
+     "N",
+     "N",
+     "N",
+     "N",
+     "N",
+     "OFF",
+     "OFF"
+    ]
+   },
+   "rules": {
+    "min_rest_hours": 8,
+    "forbidden_sequences": [
+     [
+      "N",
+      "M"
+     ]
+    ],
+    "max_consecutive_days": null,
+    "skip_inactive_days": true,
+    "allow_shared_members": false
+   },
+   "members": [
+    {
+     "id": "mem_072986fdcc",
+     "name": "Arun Kumar",
+     "role": "Lead",
+     "user": "arun.kumar",
+     "offset": 0
+    },
+    {
+     "id": "mem_fe705dc847",
+     "name": "Meera Pillai",
+     "role": "Lead",
+     "user": "meera.pillai",
+     "offset": 1
+    },
+    {
+     "id": "mem_e4a7f58597",
+     "name": "Suresh Babu",
+     "role": "Engineer",
+     "user": "suresh.babu",
+     "offset": 6
+    },
+    {
+     "id": "mem_1c2ae97e15",
+     "name": "Nikhil Jain",
+     "role": "Engineer",
+     "user": "nikhil.jain",
+     "offset": 11
+    },
+    {
+     "id": "mem_05f3ea4441",
+     "name": "Farah Ali",
+     "role": "Engineer",
+     "user": "farah.ali",
+     "offset": 16
+    },
+    {
+     "id": "mem_6c68f6689c",
+     "name": "Rohit Das",
+     "role": "Engineer",
+     "user": "rohit.das",
+     "offset": 3
+    },
+    {
+     "id": "mem_0999903dd8",
+     "name": "Lena Fox",
+     "role": "Engineer",
+     "user": "lena.fox",
+     "offset": 8
+    },
+    {
+     "id": "mem_830e9ecd16",
+     "name": "Vivek Nanda",
+     "role": "Engineer",
+     "user": "vivek.nanda",
+     "offset": 13
+    },
+    {
+     "id": "mem_2369dab342",
+     "name": "Chen Li",
+     "role": "Engineer",
+     "user": "chen.li",
+     "offset": 18
+    },
+    {
+     "id": "mem_764904c186",
+     "name": "Kavya Menon",
+     "role": "Engineer",
+     "user": "kavya.menon",
+     "offset": 20
+    },
+    {
+     "id": "mem_b81f6790d3",
+     "name": "Tom Berg",
+     "role": "Viewer",
+     "user": "tom.berg",
+     "offset": 0
+    }
+   ],
+   "approvals": {
+    "leave": "lead",
+    "swap": "lead"
+   },
+   "approvers": [
+    "arun.kumar",
+    "meera.pillai"
+   ],
+   "leave_types": [
+    "Annual",
+    "Sick",
+    "Training",
+    "Comp off",
+    "Other"
+   ],
+   "holidays": {
+    "region": "IN",
+    "subdivision": "KA",
+    "custom": [
+     {
+      "date": "2026-11-27",
+      "name": "Company foundation day"
+     }
+    ],
+    "ignore": []
+   },
+   "oncall": {
+    "enabled": true,
+    "roles": [
+     "Primary",
+     "Secondary"
+    ],
+    "rotation_days": 7,
+    "start_date": "2026-11-02",
+    "order": {
+     "Primary": [
+      "mem_e4a7f58597",
+      "mem_1c2ae97e15",
+      "mem_05f3ea4441",
+      "mem_6c68f6689c",
+      "mem_0999903dd8",
+      "mem_830e9ecd16",
+      "mem_2369dab342",
+      "mem_764904c186"
+     ],
+     "Secondary": [
+      "mem_072986fdcc",
+      "mem_fe705dc847"
+     ]
+    },
+    "escalation": [
+     {
+      "level": 1,
+      "name": "Arun Kumar, Unix SA lead",
+      "contact": "ext 4100"
+     },
+     {
+      "level": 2,
+      "name": "Service delivery manager",
+      "contact": "ext 4000"
+     }
+    ],
+    "overrides": {}
+   },
+   "overrides": {},
+   "leaves": [
+    {
+     "id": "lv_8c0e483faf",
+     "member_id": "mem_2369dab342",
+     "start": "2026-11-21",
+     "end": "2026-11-21",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "arun.kumar",
+     "requested_at": "2026-11-21T15:44:32-06:00",
+     "decided_by": "arun.kumar",
+     "decided_at": "2026-11-21T15:44:32-06:00"
+    },
+    {
+     "id": "lv_b972eac757",
+     "member_id": "mem_830e9ecd16",
+     "start": "2026-12-11",
+     "end": "2026-12-13",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "arun.kumar",
+     "requested_at": "2026-11-21T15:44:32-06:00",
+     "decided_by": "arun.kumar",
+     "decided_at": "2026-11-21T15:44:32-06:00"
+    },
+    {
+     "id": "lv_b57ad5222e",
+     "member_id": "mem_e4a7f58597",
+     "start": "2026-12-21",
+     "end": "2026-12-23",
+     "type": "Annual",
+     "note": "Family visit",
+     "status": "pending",
+     "approver": "arun.kumar",
+     "requested_by": "suresh.babu",
+     "requested_at": "2026-11-21T15:44:32-06:00",
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "swaps": [
+    {
+     "id": "sw_b1ad01500d",
+     "kind": "swap",
+     "member_a": "mem_1c2ae97e15",
+     "date_a": "2026-11-20",
+     "member_b": "mem_05f3ea4441",
+     "date_b": "2026-11-20",
+     "note": "Doctor appointment",
+     "requested_by": "nikhil.jain",
+     "requested_at": "2026-11-21T15:44:32-06:00",
+     "status": "awaiting_partner",
+     "warnings": [
+      "Farah Ali has -0.5 h rest before Morning (minimum 8 h).",
+      "Farah Ali: Night followed by Morning is not allowed."
+     ],
+     "needs_lead": true,
+     "partner": "Farah Ali",
+     "partner_user": "farah.ali",
+     "approver": "arun.kumar",
+     "consent_by": null,
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "created_at": "2026-11-21T15:44:32-06:00",
+   "updated_at": "2026-11-21T15:44:33-06:00"
+  },
+  "ros_1bd4e0253c": {
+   "template": "three_shift",
+   "layout": "by_shift",
+   "id": "ros_1bd4e0253c",
+   "name": "Windows roster",
+   "team": "Windows",
+   "start_date": "2026-10-05",
+   "cycle": {
+    "type": "custom",
+    "length_days": 21
+   },
+   "shifts": [
+    {
+     "code": "M",
+     "name": "Morning",
+     "start": "06:00",
+     "end": "15:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#F2C76E",
+     "log_shift": "Morning"
+    },
+    {
+     "code": "A",
+     "name": "Afternoon",
+     "start": "13:00",
+     "end": "22:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#7AA7FF",
+     "log_shift": "Afternoon"
+    },
+    {
+     "code": "N",
+     "name": "Night",
+     "start": "21:30",
+     "end": "06:30",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#A391F5",
+     "log_shift": "Night"
+    }
+   ],
+   "rotation": {
+    "sequence": [
+     "M",
+     "M",
+     "M",
+     "M",
+     "M",
+     "OFF",
+     "OFF",
+     "A",
+     "A",
+     "A",
+     "A",
+     "A",
+     "OFF",
+     "OFF",
+     "N",
+     "N",
+     "N",
+     "N",
+     "N",
+     "OFF",
+     "OFF"
+    ]
+   },
+   "rules": {
+    "min_rest_hours": 8,
+    "forbidden_sequences": [
+     [
+      "N",
+      "M"
+     ]
+    ],
+    "max_consecutive_days": null,
+    "skip_inactive_days": true,
+    "allow_shared_members": false
+   },
+   "members": [
+    {
+     "id": "mem_7a7754b31c",
+     "name": "Karthik Reddy",
+     "role": "Lead",
+     "user": "karthik.reddy",
+     "offset": 0
+    },
+    {
+     "id": "mem_8ba4bff163",
+     "name": "Anita Desai",
+     "role": "Lead",
+     "user": "anita.desai",
+     "offset": 1
+    },
+    {
+     "id": "mem_b34fe520d0",
+     "name": "Rahul Verma",
+     "role": "Engineer",
+     "user": "rahul.verma",
+     "offset": 6
+    },
+    {
+     "id": "mem_736ee7e33e",
+     "name": "Mark Evans",
+     "role": "Engineer",
+     "user": "mark.evans",
+     "offset": 11
+    },
+    {
+     "id": "mem_c435ac2f8d",
+     "name": "Deepa Krishnan",
+     "role": "Engineer",
+     "user": "deepa.krishnan",
+     "offset": 16
+    },
+    {
+     "id": "mem_77bee9d07b",
+     "name": "Sanjay Patel",
+     "role": "Engineer",
+     "user": "sanjay.patel",
+     "offset": 3
+    },
+    {
+     "id": "mem_20a924d8c7",
+     "name": "Olivia Chen",
+     "role": "Engineer",
+     "user": "olivia.chen",
+     "offset": 8
+    },
+    {
+     "id": "mem_b2946ded54",
+     "name": "Imran Sheikh",
+     "role": "Engineer",
+     "user": "imran.sheikh",
+     "offset": 13
+    },
+    {
+     "id": "mem_dc064b62ee",
+     "name": "Pooja Nair",
+     "role": "Engineer",
+     "user": "pooja.nair",
+     "offset": 18
+    },
+    {
+     "id": "mem_84bebcbda2",
+     "name": "Varun Mehta",
+     "role": "Engineer",
+     "user": "varun.mehta",
+     "offset": 20
+    },
+    {
+     "id": "mem_597e96eb27",
+     "name": "Ana Ito",
+     "role": "Viewer",
+     "user": "ana.ito",
+     "offset": 0
+    }
+   ],
+   "approvals": {
+    "leave": "lead",
+    "swap": "lead"
+   },
+   "approvers": [
+    "karthik.reddy",
+    "anita.desai"
+   ],
+   "leave_types": [
+    "Annual",
+    "Sick",
+    "Training",
+    "Comp off",
+    "Other"
+   ],
+   "holidays": {
+    "region": "IN",
+    "subdivision": "KA",
+    "custom": [
+     {
+      "date": "2026-11-27",
+      "name": "Company foundation day"
+     }
+    ],
+    "ignore": []
+   },
+   "oncall": {
+    "enabled": true,
+    "roles": [
+     "Primary",
+     "Secondary"
+    ],
+    "rotation_days": 7,
+    "start_date": "2026-11-02",
+    "order": {
+     "Primary": [
+      "mem_b34fe520d0",
+      "mem_736ee7e33e",
+      "mem_c435ac2f8d",
+      "mem_77bee9d07b",
+      "mem_20a924d8c7",
+      "mem_b2946ded54",
+      "mem_dc064b62ee",
+      "mem_84bebcbda2"
+     ],
+     "Secondary": [
+      "mem_7a7754b31c",
+      "mem_8ba4bff163"
+     ]
+    },
+    "escalation": [
+     {
+      "level": 1,
+      "name": "Karthik Reddy, Windows lead",
+      "contact": "ext 4101"
+     },
+     {
+      "level": 2,
+      "name": "Service delivery manager",
+      "contact": "ext 4000"
+     }
+    ],
+    "overrides": {}
+   },
+   "overrides": {},
+   "leaves": [
+    {
+     "id": "lv_26dbd73154",
+     "member_id": "mem_20a924d8c7",
+     "start": "2026-11-29",
+     "end": "2026-11-30",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "karthik.reddy",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "karthik.reddy",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_69166572fd",
+     "member_id": "mem_84bebcbda2",
+     "start": "2026-12-11",
+     "end": "2026-12-11",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "karthik.reddy",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "karthik.reddy",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_a5ce39eca2",
+     "member_id": "mem_b34fe520d0",
+     "start": "2026-12-21",
+     "end": "2026-12-23",
+     "type": "Annual",
+     "note": "Family visit",
+     "status": "pending",
+     "approver": "karthik.reddy",
+     "requested_by": "rahul.verma",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "swaps": [
+    {
+     "id": "sw_6e7319d683",
+     "kind": "swap",
+     "member_a": "mem_736ee7e33e",
+     "date_a": "2026-11-20",
+     "member_b": "mem_c435ac2f8d",
+     "date_b": "2026-11-20",
+     "note": "Doctor appointment",
+     "requested_by": "mark.evans",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "status": "awaiting_partner",
+     "warnings": [
+      "Deepa Krishnan has -0.5 h rest before Morning (minimum 8 h).",
+      "Deepa Krishnan: Night followed by Morning is not allowed."
+     ],
+     "needs_lead": true,
+     "partner": "Deepa Krishnan",
+     "partner_user": "deepa.krishnan",
+     "approver": "karthik.reddy",
+     "consent_by": null,
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "created_at": "2026-11-21T15:44:33-06:00",
+   "updated_at": "2026-11-21T15:44:33-06:00"
+  },
+  "ros_18e4ccac7e": {
+   "template": "three_shift",
+   "layout": "by_shift",
+   "id": "ros_18e4ccac7e",
+   "name": "DBA roster",
+   "team": "DBA",
+   "start_date": "2026-10-05",
+   "cycle": {
+    "type": "custom",
+    "length_days": 21
+   },
+   "shifts": [
+    {
+     "code": "M",
+     "name": "Morning",
+     "start": "06:00",
+     "end": "15:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#F2C76E",
+     "log_shift": "Morning"
+    },
+    {
+     "code": "A",
+     "name": "Afternoon",
+     "start": "13:00",
+     "end": "22:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#7AA7FF",
+     "log_shift": "Afternoon"
+    },
+    {
+     "code": "N",
+     "name": "Night",
+     "start": "21:30",
+     "end": "06:30",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#A391F5",
+     "log_shift": "Night"
+    }
+   ],
+   "rotation": {
+    "sequence": [
+     "M",
+     "M",
+     "M",
+     "M",
+     "M",
+     "OFF",
+     "OFF",
+     "A",
+     "A",
+     "A",
+     "A",
+     "A",
+     "OFF",
+     "OFF",
+     "N",
+     "N",
+     "N",
+     "N",
+     "N",
+     "OFF",
+     "OFF"
+    ]
+   },
+   "rules": {
+    "min_rest_hours": 8,
+    "forbidden_sequences": [
+     [
+      "N",
+      "M"
+     ]
+    ],
+    "max_consecutive_days": null,
+    "skip_inactive_days": true,
+    "allow_shared_members": false
+   },
+   "members": [
+    {
+     "id": "mem_bdec38cb2d",
+     "name": "Priya Sharma",
+     "role": "Lead",
+     "user": "priya.sharma",
+     "offset": 0
+    },
+    {
+     "id": "mem_5d1ba0f397",
+     "name": "Divya Menon",
+     "role": "Lead",
+     "user": "divya.menon",
+     "offset": 1
+    },
+    {
+     "id": "mem_590af149ae",
+     "name": "Sneha Iyer",
+     "role": "Engineer",
+     "user": "sneha.iyer",
+     "offset": 6
+    },
+    {
+     "id": "mem_9224f51d8d",
+     "name": "Ashok Rao",
+     "role": "Engineer",
+     "user": "ashok.rao",
+     "offset": 11
+    },
+    {
+     "id": "mem_3b5670b26e",
+     "name": "Neha Gupta",
+     "role": "Engineer",
+     "user": "neha.gupta",
+     "offset": 16
+    },
+    {
+     "id": "mem_820cd6ec96",
+     "name": "Joseph Mathew",
+     "role": "Engineer",
+     "user": "joseph.mathew",
+     "offset": 3
+    },
+    {
+     "id": "mem_943c875311",
+     "name": "Swati Kulkarni",
+     "role": "Engineer",
+     "user": "swati.kulkarni",
+     "offset": 8
+    },
+    {
+     "id": "mem_151da99886",
+     "name": "Daniel Kim",
+     "role": "Engineer",
+     "user": "daniel.kim",
+     "offset": 13
+    },
+    {
+     "id": "mem_8cfb78b03b",
+     "name": "Ritu Saxena",
+     "role": "Engineer",
+     "user": "ritu.saxena",
+     "offset": 18
+    },
+    {
+     "id": "mem_e0bfcb4d4a",
+     "name": "Manoj Pillai",
+     "role": "Engineer",
+     "user": "manoj.pillai",
+     "offset": 20
+    },
+    {
+     "id": "mem_f339bfde05",
+     "name": "Grace Lee",
+     "role": "Viewer",
+     "user": "grace.lee",
+     "offset": 0
+    }
+   ],
+   "approvals": {
+    "leave": "lead",
+    "swap": "lead"
+   },
+   "approvers": [
+    "priya.sharma",
+    "divya.menon"
+   ],
+   "leave_types": [
+    "Annual",
+    "Sick",
+    "Training",
+    "Comp off",
+    "Other"
+   ],
+   "holidays": {
+    "region": "IN",
+    "subdivision": "KA",
+    "custom": [
+     {
+      "date": "2026-11-27",
+      "name": "Company foundation day"
+     }
+    ],
+    "ignore": []
+   },
+   "oncall": {
+    "enabled": true,
+    "roles": [
+     "Primary",
+     "Secondary"
+    ],
+    "rotation_days": 7,
+    "start_date": "2026-11-02",
+    "order": {
+     "Primary": [
+      "mem_590af149ae",
+      "mem_9224f51d8d",
+      "mem_3b5670b26e",
+      "mem_820cd6ec96",
+      "mem_943c875311",
+      "mem_151da99886",
+      "mem_8cfb78b03b",
+      "mem_e0bfcb4d4a"
+     ],
+     "Secondary": [
+      "mem_bdec38cb2d",
+      "mem_5d1ba0f397"
+     ]
+    },
+    "escalation": [
+     {
+      "level": 1,
+      "name": "Priya Sharma, DBA lead",
+      "contact": "ext 4102"
+     },
+     {
+      "level": 2,
+      "name": "Service delivery manager",
+      "contact": "ext 4000"
+     }
+    ],
+    "overrides": {}
+   },
+   "overrides": {},
+   "leaves": [
+    {
+     "id": "lv_e06fec6ba0",
+     "member_id": "mem_820cd6ec96",
+     "start": "2026-11-16",
+     "end": "2026-11-16",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "priya.sharma",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "priya.sharma",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_2281207608",
+     "member_id": "mem_e0bfcb4d4a",
+     "start": "2026-11-28",
+     "end": "2026-11-28",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "priya.sharma",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "priya.sharma",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_e50efe6786",
+     "member_id": "mem_590af149ae",
+     "start": "2026-12-21",
+     "end": "2026-12-23",
+     "type": "Annual",
+     "note": "Family visit",
+     "status": "pending",
+     "approver": "priya.sharma",
+     "requested_by": "sneha.iyer",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "swaps": [
+    {
+     "id": "sw_0d3b098d73",
+     "kind": "swap",
+     "member_a": "mem_9224f51d8d",
+     "date_a": "2026-11-20",
+     "member_b": "mem_3b5670b26e",
+     "date_b": "2026-11-20",
+     "note": "Doctor appointment",
+     "requested_by": "ashok.rao",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "status": "awaiting_partner",
+     "warnings": [
+      "Neha Gupta has -0.5 h rest before Morning (minimum 8 h).",
+      "Neha Gupta: Night followed by Morning is not allowed."
+     ],
+     "needs_lead": true,
+     "partner": "Neha Gupta",
+     "partner_user": "neha.gupta",
+     "approver": "priya.sharma",
+     "consent_by": null,
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "created_at": "2026-11-21T15:44:33-06:00",
+   "updated_at": "2026-11-21T15:44:33-06:00"
+  },
+  "ros_afbb61dacc": {
+   "template": "standard",
+   "layout": "by_person",
+   "id": "ros_afbb61dacc",
+   "name": "Boomi roster",
+   "team": "Boomi",
+   "start_date": "2026-10-05",
+   "cycle": {
+    "type": "custom",
+    "length_days": 14
+   },
+   "shifts": [
+    {
+     "code": "D",
+     "name": "Day",
+     "start": "09:00",
+     "end": "18:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "min_staff": 3,
+     "max_staff": null,
+     "color": "#43C08F",
+     "log_shift": "Morning"
+    },
+    {
+     "code": "E",
+     "name": "Evening",
+     "start": "14:00",
+     "end": "23:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#7AA7FF",
+     "log_shift": "Afternoon"
+    }
+   ],
+   "rotation": {
+    "sequence": [
+     "D",
+     "D",
+     "D",
+     "D",
+     "D",
+     "OFF",
+     "OFF",
+     "E",
+     "E",
+     "E",
+     "E",
+     "E",
+     "OFF",
+     "OFF"
+    ]
+   },
+   "rules": {
+    "min_rest_hours": 8,
+    "forbidden_sequences": [],
+    "max_consecutive_days": null,
+    "skip_inactive_days": true,
+    "allow_shared_members": false
+   },
+   "members": [
+    {
+     "id": "mem_2b6812fa8e",
+     "name": "Vikram Rao",
+     "role": "Lead",
+     "user": "vikram.rao",
+     "offset": 0
+    },
+    {
+     "id": "mem_72d67f607c",
+     "name": "Omar Khan",
+     "role": "Engineer",
+     "user": "omar.khan",
+     "offset": 7
+    },
+    {
+     "id": "mem_1e1926596a",
+     "name": "Lakshmi Iyer",
+     "role": "Engineer",
+     "user": "lakshmi.iyer",
+     "offset": 0
+    },
+    {
+     "id": "mem_52fd47598a",
+     "name": "Arjun Bose",
+     "role": "Engineer",
+     "user": "arjun.bose",
+     "offset": 7
+    },
+    {
+     "id": "mem_a40126b13d",
+     "name": "Sara Thomas",
+     "role": "Engineer",
+     "user": "sara.thomas",
+     "offset": 0
+    },
+    {
+     "id": "mem_53e5959452",
+     "name": "Kiran Shetty",
+     "role": "Engineer",
+     "user": "kiran.shetty",
+     "offset": 7
+    },
+    {
+     "id": "mem_c452b9af10",
+     "name": "Maya Singh",
+     "role": "Engineer",
+     "user": "maya.singh",
+     "offset": 0
+    },
+    {
+     "id": "mem_cca2e2765f",
+     "name": "Ravi Nair",
+     "role": "Engineer",
+     "user": "ravi.nair",
+     "offset": 7
+    },
+    {
+     "id": "mem_3c913641ab",
+     "name": "Tanvi Joshi",
+     "role": "Engineer",
+     "user": "tanvi.joshi",
+     "offset": 0
+    },
+    {
+     "id": "mem_36a0ea3281",
+     "name": "Ben Cole",
+     "role": "Viewer",
+     "user": "ben.cole",
+     "offset": 7
+    }
+   ],
+   "approvals": {
+    "leave": "lead",
+    "swap": "lead"
+   },
+   "approvers": [
+    "vikram.rao"
+   ],
+   "leave_types": [
+    "Annual",
+    "Sick",
+    "Training",
+    "Comp off",
+    "Other"
+   ],
+   "holidays": {
+    "region": "IN",
+    "subdivision": "KA",
+    "custom": [
+     {
+      "date": "2026-11-27",
+      "name": "Company foundation day"
+     }
+    ],
+    "ignore": []
+   },
+   "oncall": {
+    "enabled": true,
+    "roles": [
+     "Primary",
+     "Secondary"
+    ],
+    "rotation_days": 7,
+    "start_date": "2026-11-02",
+    "order": {
+     "Primary": [
+      "mem_72d67f607c",
+      "mem_1e1926596a",
+      "mem_52fd47598a",
+      "mem_a40126b13d",
+      "mem_53e5959452",
+      "mem_c452b9af10",
+      "mem_cca2e2765f",
+      "mem_3c913641ab"
+     ],
+     "Secondary": [
+      "mem_2b6812fa8e"
+     ]
+    },
+    "escalation": [
+     {
+      "level": 1,
+      "name": "Vikram Rao, Boomi lead",
+      "contact": "ext 4103"
+     },
+     {
+      "level": 2,
+      "name": "Service delivery manager",
+      "contact": "ext 4000"
+     }
+    ],
+    "overrides": {}
+   },
+   "overrides": {},
+   "leaves": [
+    {
+     "id": "lv_9fbd5bc052",
+     "member_id": "mem_72d67f607c",
+     "start": "2026-11-27",
+     "end": "2026-11-29",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "vikram.rao",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "vikram.rao",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_d8ae40a5f5",
+     "member_id": "mem_cca2e2765f",
+     "start": "2026-11-27",
+     "end": "2026-11-27",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "vikram.rao",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "vikram.rao",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_0df58df517",
+     "member_id": "mem_72d67f607c",
+     "start": "2026-12-21",
+     "end": "2026-12-23",
+     "type": "Annual",
+     "note": "Family visit",
+     "status": "pending",
+     "approver": "vikram.rao",
+     "requested_by": "omar.khan",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "swaps": [
+    {
+     "id": "sw_83b3f39ef6",
+     "kind": "swap",
+     "member_a": "mem_1e1926596a",
+     "date_a": "2026-11-20",
+     "member_b": "mem_52fd47598a",
+     "date_b": "2026-11-20",
+     "note": "Doctor appointment",
+     "requested_by": "lakshmi.iyer",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "status": "awaiting_partner",
+     "warnings": [],
+     "needs_lead": true,
+     "partner": "Arjun Bose",
+     "partner_user": "arjun.bose",
+     "approver": "vikram.rao",
+     "consent_by": null,
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "created_at": "2026-11-21T15:44:33-06:00",
+   "updated_at": "2026-11-21T15:44:33-06:00"
+  },
+  "ros_ce0ccc9bbb": {
+   "template": "three_shift",
+   "layout": "by_shift",
+   "id": "ros_ce0ccc9bbb",
+   "name": "NOC roster",
+   "team": "NOC",
+   "start_date": "2026-10-05",
+   "cycle": {
+    "type": "custom",
+    "length_days": 21
+   },
+   "shifts": [
+    {
+     "code": "M",
+     "name": "Morning",
+     "start": "06:00",
+     "end": "15:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#F2C76E",
+     "log_shift": "Morning"
+    },
+    {
+     "code": "A",
+     "name": "Afternoon",
+     "start": "13:00",
+     "end": "22:00",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#7AA7FF",
+     "log_shift": "Afternoon"
+    },
+    {
+     "code": "N",
+     "name": "Night",
+     "start": "21:30",
+     "end": "06:30",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "min_staff": 2,
+     "max_staff": null,
+     "color": "#A391F5",
+     "log_shift": "Night"
+    }
+   ],
+   "rotation": {
+    "sequence": [
+     "M",
+     "M",
+     "M",
+     "M",
+     "M",
+     "OFF",
+     "OFF",
+     "A",
+     "A",
+     "A",
+     "A",
+     "A",
+     "OFF",
+     "OFF",
+     "N",
+     "N",
+     "N",
+     "N",
+     "N",
+     "OFF",
+     "OFF"
+    ]
+   },
+   "rules": {
+    "min_rest_hours": 8,
+    "forbidden_sequences": [
+     [
+      "N",
+      "M"
+     ]
+    ],
+    "max_consecutive_days": null,
+    "skip_inactive_days": true,
+    "allow_shared_members": false
+   },
+   "members": [
+    {
+     "id": "mem_09cbf481b9",
+     "name": "Anjali Nair",
+     "role": "Lead",
+     "user": "anjali.nair",
+     "offset": 0
+    },
+    {
+     "id": "mem_5a457207aa",
+     "name": "Harish Kumar",
+     "role": "Lead",
+     "user": "harish.kumar",
+     "offset": 1
+    },
+    {
+     "id": "mem_ca91dc6efc",
+     "name": "Dinesh Yadav",
+     "role": "Engineer",
+     "user": "dinesh.yadav",
+     "offset": 6
+    },
+    {
+     "id": "mem_39c274ffb6",
+     "name": "Aisha Khan",
+     "role": "Engineer",
+     "user": "aisha.khan",
+     "offset": 11
+    },
+    {
+     "id": "mem_4eb0ffa9d1",
+     "name": "George Paul",
+     "role": "Engineer",
+     "user": "george.paul",
+     "offset": 16
+    },
+    {
+     "id": "mem_05e31e6acb",
+     "name": "Shruti Rao",
+     "role": "Engineer",
+     "user": "shruti.rao",
+     "offset": 3
+    },
+    {
+     "id": "mem_1219ffd783",
+     "name": "Naveen Reddy",
+     "role": "Engineer",
+     "user": "naveen.reddy",
+     "offset": 8
+    },
+    {
+     "id": "mem_4f4afab8ec",
+     "name": "Emma Wright",
+     "role": "Engineer",
+     "user": "emma.wright",
+     "offset": 13
+    },
+    {
+     "id": "mem_9fb856d907",
+     "name": "Prakash Iyer",
+     "role": "Viewer",
+     "user": "prakash.iyer",
+     "offset": 18
+    },
+    {
+     "id": "mem_ffe3d51656",
+     "name": "Leah Morris",
+     "role": "Viewer",
+     "user": "leah.morris",
+     "offset": 20
+    }
+   ],
+   "approvals": {
+    "leave": "lead",
+    "swap": "lead"
+   },
+   "approvers": [
+    "anjali.nair",
+    "harish.kumar"
+   ],
+   "leave_types": [
+    "Annual",
+    "Sick",
+    "Training",
+    "Comp off",
+    "Other"
+   ],
+   "holidays": {
+    "region": "IN",
+    "subdivision": "KA",
+    "custom": [
+     {
+      "date": "2026-11-27",
+      "name": "Company foundation day"
+     }
+    ],
+    "ignore": []
+   },
+   "oncall": {
+    "enabled": true,
+    "roles": [
+     "Primary",
+     "Secondary"
+    ],
+    "rotation_days": 7,
+    "start_date": "2026-11-02",
+    "order": {
+     "Primary": [
+      "mem_ca91dc6efc",
+      "mem_39c274ffb6",
+      "mem_4eb0ffa9d1",
+      "mem_05e31e6acb",
+      "mem_1219ffd783",
+      "mem_4f4afab8ec"
+     ],
+     "Secondary": [
+      "mem_09cbf481b9",
+      "mem_5a457207aa"
+     ]
+    },
+    "escalation": [
+     {
+      "level": 1,
+      "name": "Anjali Nair, NOC lead",
+      "contact": "ext 4104"
+     },
+     {
+      "level": 2,
+      "name": "Service delivery manager",
+      "contact": "ext 4000"
+     }
+    ],
+    "overrides": {}
+   },
+   "overrides": {},
+   "leaves": [
+    {
+     "id": "lv_2e4f10dcdf",
+     "member_id": "mem_ca91dc6efc",
+     "start": "2026-12-01",
+     "end": "2026-12-02",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "anjali.nair",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "anjali.nair",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_e46e378522",
+     "member_id": "mem_1219ffd783",
+     "start": "2026-12-07",
+     "end": "2026-12-08",
+     "type": "Annual",
+     "note": "Planned leave",
+     "status": "approved",
+     "approver": null,
+     "requested_by": "anjali.nair",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": "anjali.nair",
+     "decided_at": "2026-11-21T15:44:33-06:00"
+    },
+    {
+     "id": "lv_dd16550a4e",
+     "member_id": "mem_ca91dc6efc",
+     "start": "2026-12-21",
+     "end": "2026-12-23",
+     "type": "Annual",
+     "note": "Family visit",
+     "status": "pending",
+     "approver": "anjali.nair",
+     "requested_by": "dinesh.yadav",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "swaps": [
+    {
+     "id": "sw_50631afd0e",
+     "kind": "swap",
+     "member_a": "mem_39c274ffb6",
+     "date_a": "2026-11-20",
+     "member_b": "mem_4eb0ffa9d1",
+     "date_b": "2026-11-20",
+     "note": "Doctor appointment",
+     "requested_by": "aisha.khan",
+     "requested_at": "2026-11-21T15:44:33-06:00",
+     "status": "awaiting_partner",
+     "warnings": [
+      "George Paul has -0.5 h rest before Morning (minimum 8 h).",
+      "George Paul: Night followed by Morning is not allowed."
+     ],
+     "needs_lead": true,
+     "partner": "George Paul",
+     "partner_user": "george.paul",
+     "approver": "anjali.nair",
+     "consent_by": null,
+     "decided_by": null,
+     "decided_at": null
+    }
+   ],
+   "created_at": "2026-11-21T15:44:33-06:00",
+   "updated_at": "2026-11-21T15:44:33-06:00"
+  }
+ },
+ "versions": {
+  "ros_758bde7f9b": [
+   {
+    "at": "2026-11-21T15:44:32-06:00",
+    "by": "arun.kumar",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_758bde7f9b",
+     "name": "Unix SA roster",
+     "team": "Unix SA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_072986fdcc",
+       "name": "Arun Kumar",
+       "role": "Lead",
+       "user": "arun.kumar",
+       "offset": 0
+      },
+      {
+       "id": "mem_fe705dc847",
+       "name": "Meera Pillai",
+       "role": "Lead",
+       "user": "meera.pillai",
+       "offset": 1
+      },
+      {
+       "id": "mem_e4a7f58597",
+       "name": "Suresh Babu",
+       "role": "Engineer",
+       "user": "suresh.babu",
+       "offset": 6
+      },
+      {
+       "id": "mem_1c2ae97e15",
+       "name": "Nikhil Jain",
+       "role": "Engineer",
+       "user": "nikhil.jain",
+       "offset": 11
+      },
+      {
+       "id": "mem_05f3ea4441",
+       "name": "Farah Ali",
+       "role": "Engineer",
+       "user": "farah.ali",
+       "offset": 16
+      },
+      {
+       "id": "mem_6c68f6689c",
+       "name": "Rohit Das",
+       "role": "Engineer",
+       "user": "rohit.das",
+       "offset": 3
+      },
+      {
+       "id": "mem_0999903dd8",
+       "name": "Lena Fox",
+       "role": "Engineer",
+       "user": "lena.fox",
+       "offset": 8
+      },
+      {
+       "id": "mem_830e9ecd16",
+       "name": "Vivek Nanda",
+       "role": "Engineer",
+       "user": "vivek.nanda",
+       "offset": 13
+      },
+      {
+       "id": "mem_2369dab342",
+       "name": "Chen Li",
+       "role": "Engineer",
+       "user": "chen.li",
+       "offset": 18
+      },
+      {
+       "id": "mem_764904c186",
+       "name": "Kavya Menon",
+       "role": "Engineer",
+       "user": "kavya.menon",
+       "offset": 20
+      },
+      {
+       "id": "mem_b81f6790d3",
+       "name": "Tom Berg",
+       "role": "Viewer",
+       "user": "tom.berg",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "arun.kumar",
+      "meera.pillai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_e4a7f58597",
+        "mem_1c2ae97e15",
+        "mem_05f3ea4441",
+        "mem_6c68f6689c",
+        "mem_0999903dd8",
+        "mem_830e9ecd16",
+        "mem_2369dab342",
+        "mem_764904c186"
+       ],
+       "Secondary": [
+        "mem_072986fdcc",
+        "mem_fe705dc847"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Arun Kumar, Unix SA lead",
+        "contact": "ext 4100"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:32-06:00",
+     "updated_at": "2026-11-21T15:44:32-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:32-06:00",
+    "by": "arun.kumar",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_758bde7f9b",
+     "name": "Unix SA roster",
+     "team": "Unix SA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_072986fdcc",
+       "name": "Arun Kumar",
+       "role": "Lead",
+       "user": "arun.kumar",
+       "offset": 0
+      },
+      {
+       "id": "mem_fe705dc847",
+       "name": "Meera Pillai",
+       "role": "Lead",
+       "user": "meera.pillai",
+       "offset": 1
+      },
+      {
+       "id": "mem_e4a7f58597",
+       "name": "Suresh Babu",
+       "role": "Engineer",
+       "user": "suresh.babu",
+       "offset": 6
+      },
+      {
+       "id": "mem_1c2ae97e15",
+       "name": "Nikhil Jain",
+       "role": "Engineer",
+       "user": "nikhil.jain",
+       "offset": 11
+      },
+      {
+       "id": "mem_05f3ea4441",
+       "name": "Farah Ali",
+       "role": "Engineer",
+       "user": "farah.ali",
+       "offset": 16
+      },
+      {
+       "id": "mem_6c68f6689c",
+       "name": "Rohit Das",
+       "role": "Engineer",
+       "user": "rohit.das",
+       "offset": 3
+      },
+      {
+       "id": "mem_0999903dd8",
+       "name": "Lena Fox",
+       "role": "Engineer",
+       "user": "lena.fox",
+       "offset": 8
+      },
+      {
+       "id": "mem_830e9ecd16",
+       "name": "Vivek Nanda",
+       "role": "Engineer",
+       "user": "vivek.nanda",
+       "offset": 13
+      },
+      {
+       "id": "mem_2369dab342",
+       "name": "Chen Li",
+       "role": "Engineer",
+       "user": "chen.li",
+       "offset": 18
+      },
+      {
+       "id": "mem_764904c186",
+       "name": "Kavya Menon",
+       "role": "Engineer",
+       "user": "kavya.menon",
+       "offset": 20
+      },
+      {
+       "id": "mem_b81f6790d3",
+       "name": "Tom Berg",
+       "role": "Viewer",
+       "user": "tom.berg",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "arun.kumar",
+      "meera.pillai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_e4a7f58597",
+        "mem_1c2ae97e15",
+        "mem_05f3ea4441",
+        "mem_6c68f6689c",
+        "mem_0999903dd8",
+        "mem_830e9ecd16",
+        "mem_2369dab342",
+        "mem_764904c186"
+       ],
+       "Secondary": [
+        "mem_072986fdcc",
+        "mem_fe705dc847"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Arun Kumar, Unix SA lead",
+        "contact": "ext 4100"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_8c0e483faf",
+       "member_id": "mem_2369dab342",
+       "start": "2026-11-21",
+       "end": "2026-11-21",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "arun.kumar",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": "arun.kumar",
+       "decided_at": "2026-11-21T15:44:32-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:32-06:00",
+     "updated_at": "2026-11-21T15:44:32-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:32-06:00",
+    "by": "suresh.babu",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_758bde7f9b",
+     "name": "Unix SA roster",
+     "team": "Unix SA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_072986fdcc",
+       "name": "Arun Kumar",
+       "role": "Lead",
+       "user": "arun.kumar",
+       "offset": 0
+      },
+      {
+       "id": "mem_fe705dc847",
+       "name": "Meera Pillai",
+       "role": "Lead",
+       "user": "meera.pillai",
+       "offset": 1
+      },
+      {
+       "id": "mem_e4a7f58597",
+       "name": "Suresh Babu",
+       "role": "Engineer",
+       "user": "suresh.babu",
+       "offset": 6
+      },
+      {
+       "id": "mem_1c2ae97e15",
+       "name": "Nikhil Jain",
+       "role": "Engineer",
+       "user": "nikhil.jain",
+       "offset": 11
+      },
+      {
+       "id": "mem_05f3ea4441",
+       "name": "Farah Ali",
+       "role": "Engineer",
+       "user": "farah.ali",
+       "offset": 16
+      },
+      {
+       "id": "mem_6c68f6689c",
+       "name": "Rohit Das",
+       "role": "Engineer",
+       "user": "rohit.das",
+       "offset": 3
+      },
+      {
+       "id": "mem_0999903dd8",
+       "name": "Lena Fox",
+       "role": "Engineer",
+       "user": "lena.fox",
+       "offset": 8
+      },
+      {
+       "id": "mem_830e9ecd16",
+       "name": "Vivek Nanda",
+       "role": "Engineer",
+       "user": "vivek.nanda",
+       "offset": 13
+      },
+      {
+       "id": "mem_2369dab342",
+       "name": "Chen Li",
+       "role": "Engineer",
+       "user": "chen.li",
+       "offset": 18
+      },
+      {
+       "id": "mem_764904c186",
+       "name": "Kavya Menon",
+       "role": "Engineer",
+       "user": "kavya.menon",
+       "offset": 20
+      },
+      {
+       "id": "mem_b81f6790d3",
+       "name": "Tom Berg",
+       "role": "Viewer",
+       "user": "tom.berg",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "arun.kumar",
+      "meera.pillai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_e4a7f58597",
+        "mem_1c2ae97e15",
+        "mem_05f3ea4441",
+        "mem_6c68f6689c",
+        "mem_0999903dd8",
+        "mem_830e9ecd16",
+        "mem_2369dab342",
+        "mem_764904c186"
+       ],
+       "Secondary": [
+        "mem_072986fdcc",
+        "mem_fe705dc847"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Arun Kumar, Unix SA lead",
+        "contact": "ext 4100"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_8c0e483faf",
+       "member_id": "mem_2369dab342",
+       "start": "2026-11-21",
+       "end": "2026-11-21",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "arun.kumar",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": "arun.kumar",
+       "decided_at": "2026-11-21T15:44:32-06:00"
+      },
+      {
+       "id": "lv_b972eac757",
+       "member_id": "mem_830e9ecd16",
+       "start": "2026-12-11",
+       "end": "2026-12-13",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "arun.kumar",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": "arun.kumar",
+       "decided_at": "2026-11-21T15:44:32-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:32-06:00",
+     "updated_at": "2026-11-21T15:44:32-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "nikhil.jain",
+    "action": "Request swap",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_758bde7f9b",
+     "name": "Unix SA roster",
+     "team": "Unix SA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_072986fdcc",
+       "name": "Arun Kumar",
+       "role": "Lead",
+       "user": "arun.kumar",
+       "offset": 0
+      },
+      {
+       "id": "mem_fe705dc847",
+       "name": "Meera Pillai",
+       "role": "Lead",
+       "user": "meera.pillai",
+       "offset": 1
+      },
+      {
+       "id": "mem_e4a7f58597",
+       "name": "Suresh Babu",
+       "role": "Engineer",
+       "user": "suresh.babu",
+       "offset": 6
+      },
+      {
+       "id": "mem_1c2ae97e15",
+       "name": "Nikhil Jain",
+       "role": "Engineer",
+       "user": "nikhil.jain",
+       "offset": 11
+      },
+      {
+       "id": "mem_05f3ea4441",
+       "name": "Farah Ali",
+       "role": "Engineer",
+       "user": "farah.ali",
+       "offset": 16
+      },
+      {
+       "id": "mem_6c68f6689c",
+       "name": "Rohit Das",
+       "role": "Engineer",
+       "user": "rohit.das",
+       "offset": 3
+      },
+      {
+       "id": "mem_0999903dd8",
+       "name": "Lena Fox",
+       "role": "Engineer",
+       "user": "lena.fox",
+       "offset": 8
+      },
+      {
+       "id": "mem_830e9ecd16",
+       "name": "Vivek Nanda",
+       "role": "Engineer",
+       "user": "vivek.nanda",
+       "offset": 13
+      },
+      {
+       "id": "mem_2369dab342",
+       "name": "Chen Li",
+       "role": "Engineer",
+       "user": "chen.li",
+       "offset": 18
+      },
+      {
+       "id": "mem_764904c186",
+       "name": "Kavya Menon",
+       "role": "Engineer",
+       "user": "kavya.menon",
+       "offset": 20
+      },
+      {
+       "id": "mem_b81f6790d3",
+       "name": "Tom Berg",
+       "role": "Viewer",
+       "user": "tom.berg",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "arun.kumar",
+      "meera.pillai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_e4a7f58597",
+        "mem_1c2ae97e15",
+        "mem_05f3ea4441",
+        "mem_6c68f6689c",
+        "mem_0999903dd8",
+        "mem_830e9ecd16",
+        "mem_2369dab342",
+        "mem_764904c186"
+       ],
+       "Secondary": [
+        "mem_072986fdcc",
+        "mem_fe705dc847"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Arun Kumar, Unix SA lead",
+        "contact": "ext 4100"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_8c0e483faf",
+       "member_id": "mem_2369dab342",
+       "start": "2026-11-21",
+       "end": "2026-11-21",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "arun.kumar",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": "arun.kumar",
+       "decided_at": "2026-11-21T15:44:32-06:00"
+      },
+      {
+       "id": "lv_b972eac757",
+       "member_id": "mem_830e9ecd16",
+       "start": "2026-12-11",
+       "end": "2026-12-13",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "arun.kumar",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": "arun.kumar",
+       "decided_at": "2026-11-21T15:44:32-06:00"
+      },
+      {
+       "id": "lv_b57ad5222e",
+       "member_id": "mem_e4a7f58597",
+       "start": "2026-12-21",
+       "end": "2026-12-23",
+       "type": "Annual",
+       "note": "Family visit",
+       "status": "pending",
+       "approver": "arun.kumar",
+       "requested_by": "suresh.babu",
+       "requested_at": "2026-11-21T15:44:32-06:00",
+       "decided_by": null,
+       "decided_at": null
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:32-06:00",
+     "updated_at": "2026-11-21T15:44:32-06:00"
+    }
+   }
+  ],
+  "ros_1bd4e0253c": [
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "karthik.reddy",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_1bd4e0253c",
+     "name": "Windows roster",
+     "team": "Windows",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_7a7754b31c",
+       "name": "Karthik Reddy",
+       "role": "Lead",
+       "user": "karthik.reddy",
+       "offset": 0
+      },
+      {
+       "id": "mem_8ba4bff163",
+       "name": "Anita Desai",
+       "role": "Lead",
+       "user": "anita.desai",
+       "offset": 1
+      },
+      {
+       "id": "mem_b34fe520d0",
+       "name": "Rahul Verma",
+       "role": "Engineer",
+       "user": "rahul.verma",
+       "offset": 6
+      },
+      {
+       "id": "mem_736ee7e33e",
+       "name": "Mark Evans",
+       "role": "Engineer",
+       "user": "mark.evans",
+       "offset": 11
+      },
+      {
+       "id": "mem_c435ac2f8d",
+       "name": "Deepa Krishnan",
+       "role": "Engineer",
+       "user": "deepa.krishnan",
+       "offset": 16
+      },
+      {
+       "id": "mem_77bee9d07b",
+       "name": "Sanjay Patel",
+       "role": "Engineer",
+       "user": "sanjay.patel",
+       "offset": 3
+      },
+      {
+       "id": "mem_20a924d8c7",
+       "name": "Olivia Chen",
+       "role": "Engineer",
+       "user": "olivia.chen",
+       "offset": 8
+      },
+      {
+       "id": "mem_b2946ded54",
+       "name": "Imran Sheikh",
+       "role": "Engineer",
+       "user": "imran.sheikh",
+       "offset": 13
+      },
+      {
+       "id": "mem_dc064b62ee",
+       "name": "Pooja Nair",
+       "role": "Engineer",
+       "user": "pooja.nair",
+       "offset": 18
+      },
+      {
+       "id": "mem_84bebcbda2",
+       "name": "Varun Mehta",
+       "role": "Engineer",
+       "user": "varun.mehta",
+       "offset": 20
+      },
+      {
+       "id": "mem_597e96eb27",
+       "name": "Ana Ito",
+       "role": "Viewer",
+       "user": "ana.ito",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "karthik.reddy",
+      "anita.desai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_b34fe520d0",
+        "mem_736ee7e33e",
+        "mem_c435ac2f8d",
+        "mem_77bee9d07b",
+        "mem_20a924d8c7",
+        "mem_b2946ded54",
+        "mem_dc064b62ee",
+        "mem_84bebcbda2"
+       ],
+       "Secondary": [
+        "mem_7a7754b31c",
+        "mem_8ba4bff163"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Karthik Reddy, Windows lead",
+        "contact": "ext 4101"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "karthik.reddy",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_1bd4e0253c",
+     "name": "Windows roster",
+     "team": "Windows",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_7a7754b31c",
+       "name": "Karthik Reddy",
+       "role": "Lead",
+       "user": "karthik.reddy",
+       "offset": 0
+      },
+      {
+       "id": "mem_8ba4bff163",
+       "name": "Anita Desai",
+       "role": "Lead",
+       "user": "anita.desai",
+       "offset": 1
+      },
+      {
+       "id": "mem_b34fe520d0",
+       "name": "Rahul Verma",
+       "role": "Engineer",
+       "user": "rahul.verma",
+       "offset": 6
+      },
+      {
+       "id": "mem_736ee7e33e",
+       "name": "Mark Evans",
+       "role": "Engineer",
+       "user": "mark.evans",
+       "offset": 11
+      },
+      {
+       "id": "mem_c435ac2f8d",
+       "name": "Deepa Krishnan",
+       "role": "Engineer",
+       "user": "deepa.krishnan",
+       "offset": 16
+      },
+      {
+       "id": "mem_77bee9d07b",
+       "name": "Sanjay Patel",
+       "role": "Engineer",
+       "user": "sanjay.patel",
+       "offset": 3
+      },
+      {
+       "id": "mem_20a924d8c7",
+       "name": "Olivia Chen",
+       "role": "Engineer",
+       "user": "olivia.chen",
+       "offset": 8
+      },
+      {
+       "id": "mem_b2946ded54",
+       "name": "Imran Sheikh",
+       "role": "Engineer",
+       "user": "imran.sheikh",
+       "offset": 13
+      },
+      {
+       "id": "mem_dc064b62ee",
+       "name": "Pooja Nair",
+       "role": "Engineer",
+       "user": "pooja.nair",
+       "offset": 18
+      },
+      {
+       "id": "mem_84bebcbda2",
+       "name": "Varun Mehta",
+       "role": "Engineer",
+       "user": "varun.mehta",
+       "offset": 20
+      },
+      {
+       "id": "mem_597e96eb27",
+       "name": "Ana Ito",
+       "role": "Viewer",
+       "user": "ana.ito",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "karthik.reddy",
+      "anita.desai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_b34fe520d0",
+        "mem_736ee7e33e",
+        "mem_c435ac2f8d",
+        "mem_77bee9d07b",
+        "mem_20a924d8c7",
+        "mem_b2946ded54",
+        "mem_dc064b62ee",
+        "mem_84bebcbda2"
+       ],
+       "Secondary": [
+        "mem_7a7754b31c",
+        "mem_8ba4bff163"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Karthik Reddy, Windows lead",
+        "contact": "ext 4101"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_26dbd73154",
+       "member_id": "mem_20a924d8c7",
+       "start": "2026-11-29",
+       "end": "2026-11-30",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "karthik.reddy",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "karthik.reddy",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "rahul.verma",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_1bd4e0253c",
+     "name": "Windows roster",
+     "team": "Windows",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_7a7754b31c",
+       "name": "Karthik Reddy",
+       "role": "Lead",
+       "user": "karthik.reddy",
+       "offset": 0
+      },
+      {
+       "id": "mem_8ba4bff163",
+       "name": "Anita Desai",
+       "role": "Lead",
+       "user": "anita.desai",
+       "offset": 1
+      },
+      {
+       "id": "mem_b34fe520d0",
+       "name": "Rahul Verma",
+       "role": "Engineer",
+       "user": "rahul.verma",
+       "offset": 6
+      },
+      {
+       "id": "mem_736ee7e33e",
+       "name": "Mark Evans",
+       "role": "Engineer",
+       "user": "mark.evans",
+       "offset": 11
+      },
+      {
+       "id": "mem_c435ac2f8d",
+       "name": "Deepa Krishnan",
+       "role": "Engineer",
+       "user": "deepa.krishnan",
+       "offset": 16
+      },
+      {
+       "id": "mem_77bee9d07b",
+       "name": "Sanjay Patel",
+       "role": "Engineer",
+       "user": "sanjay.patel",
+       "offset": 3
+      },
+      {
+       "id": "mem_20a924d8c7",
+       "name": "Olivia Chen",
+       "role": "Engineer",
+       "user": "olivia.chen",
+       "offset": 8
+      },
+      {
+       "id": "mem_b2946ded54",
+       "name": "Imran Sheikh",
+       "role": "Engineer",
+       "user": "imran.sheikh",
+       "offset": 13
+      },
+      {
+       "id": "mem_dc064b62ee",
+       "name": "Pooja Nair",
+       "role": "Engineer",
+       "user": "pooja.nair",
+       "offset": 18
+      },
+      {
+       "id": "mem_84bebcbda2",
+       "name": "Varun Mehta",
+       "role": "Engineer",
+       "user": "varun.mehta",
+       "offset": 20
+      },
+      {
+       "id": "mem_597e96eb27",
+       "name": "Ana Ito",
+       "role": "Viewer",
+       "user": "ana.ito",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "karthik.reddy",
+      "anita.desai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_b34fe520d0",
+        "mem_736ee7e33e",
+        "mem_c435ac2f8d",
+        "mem_77bee9d07b",
+        "mem_20a924d8c7",
+        "mem_b2946ded54",
+        "mem_dc064b62ee",
+        "mem_84bebcbda2"
+       ],
+       "Secondary": [
+        "mem_7a7754b31c",
+        "mem_8ba4bff163"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Karthik Reddy, Windows lead",
+        "contact": "ext 4101"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_26dbd73154",
+       "member_id": "mem_20a924d8c7",
+       "start": "2026-11-29",
+       "end": "2026-11-30",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "karthik.reddy",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "karthik.reddy",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_69166572fd",
+       "member_id": "mem_84bebcbda2",
+       "start": "2026-12-11",
+       "end": "2026-12-11",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "karthik.reddy",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "karthik.reddy",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "mark.evans",
+    "action": "Request swap",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_1bd4e0253c",
+     "name": "Windows roster",
+     "team": "Windows",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_7a7754b31c",
+       "name": "Karthik Reddy",
+       "role": "Lead",
+       "user": "karthik.reddy",
+       "offset": 0
+      },
+      {
+       "id": "mem_8ba4bff163",
+       "name": "Anita Desai",
+       "role": "Lead",
+       "user": "anita.desai",
+       "offset": 1
+      },
+      {
+       "id": "mem_b34fe520d0",
+       "name": "Rahul Verma",
+       "role": "Engineer",
+       "user": "rahul.verma",
+       "offset": 6
+      },
+      {
+       "id": "mem_736ee7e33e",
+       "name": "Mark Evans",
+       "role": "Engineer",
+       "user": "mark.evans",
+       "offset": 11
+      },
+      {
+       "id": "mem_c435ac2f8d",
+       "name": "Deepa Krishnan",
+       "role": "Engineer",
+       "user": "deepa.krishnan",
+       "offset": 16
+      },
+      {
+       "id": "mem_77bee9d07b",
+       "name": "Sanjay Patel",
+       "role": "Engineer",
+       "user": "sanjay.patel",
+       "offset": 3
+      },
+      {
+       "id": "mem_20a924d8c7",
+       "name": "Olivia Chen",
+       "role": "Engineer",
+       "user": "olivia.chen",
+       "offset": 8
+      },
+      {
+       "id": "mem_b2946ded54",
+       "name": "Imran Sheikh",
+       "role": "Engineer",
+       "user": "imran.sheikh",
+       "offset": 13
+      },
+      {
+       "id": "mem_dc064b62ee",
+       "name": "Pooja Nair",
+       "role": "Engineer",
+       "user": "pooja.nair",
+       "offset": 18
+      },
+      {
+       "id": "mem_84bebcbda2",
+       "name": "Varun Mehta",
+       "role": "Engineer",
+       "user": "varun.mehta",
+       "offset": 20
+      },
+      {
+       "id": "mem_597e96eb27",
+       "name": "Ana Ito",
+       "role": "Viewer",
+       "user": "ana.ito",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "karthik.reddy",
+      "anita.desai"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_b34fe520d0",
+        "mem_736ee7e33e",
+        "mem_c435ac2f8d",
+        "mem_77bee9d07b",
+        "mem_20a924d8c7",
+        "mem_b2946ded54",
+        "mem_dc064b62ee",
+        "mem_84bebcbda2"
+       ],
+       "Secondary": [
+        "mem_7a7754b31c",
+        "mem_8ba4bff163"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Karthik Reddy, Windows lead",
+        "contact": "ext 4101"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_26dbd73154",
+       "member_id": "mem_20a924d8c7",
+       "start": "2026-11-29",
+       "end": "2026-11-30",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "karthik.reddy",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "karthik.reddy",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_69166572fd",
+       "member_id": "mem_84bebcbda2",
+       "start": "2026-12-11",
+       "end": "2026-12-11",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "karthik.reddy",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "karthik.reddy",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_a5ce39eca2",
+       "member_id": "mem_b34fe520d0",
+       "start": "2026-12-21",
+       "end": "2026-12-23",
+       "type": "Annual",
+       "note": "Family visit",
+       "status": "pending",
+       "approver": "karthik.reddy",
+       "requested_by": "rahul.verma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": null,
+       "decided_at": null
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   }
+  ],
+  "ros_18e4ccac7e": [
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "priya.sharma",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_18e4ccac7e",
+     "name": "DBA roster",
+     "team": "DBA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_bdec38cb2d",
+       "name": "Priya Sharma",
+       "role": "Lead",
+       "user": "priya.sharma",
+       "offset": 0
+      },
+      {
+       "id": "mem_5d1ba0f397",
+       "name": "Divya Menon",
+       "role": "Lead",
+       "user": "divya.menon",
+       "offset": 1
+      },
+      {
+       "id": "mem_590af149ae",
+       "name": "Sneha Iyer",
+       "role": "Engineer",
+       "user": "sneha.iyer",
+       "offset": 6
+      },
+      {
+       "id": "mem_9224f51d8d",
+       "name": "Ashok Rao",
+       "role": "Engineer",
+       "user": "ashok.rao",
+       "offset": 11
+      },
+      {
+       "id": "mem_3b5670b26e",
+       "name": "Neha Gupta",
+       "role": "Engineer",
+       "user": "neha.gupta",
+       "offset": 16
+      },
+      {
+       "id": "mem_820cd6ec96",
+       "name": "Joseph Mathew",
+       "role": "Engineer",
+       "user": "joseph.mathew",
+       "offset": 3
+      },
+      {
+       "id": "mem_943c875311",
+       "name": "Swati Kulkarni",
+       "role": "Engineer",
+       "user": "swati.kulkarni",
+       "offset": 8
+      },
+      {
+       "id": "mem_151da99886",
+       "name": "Daniel Kim",
+       "role": "Engineer",
+       "user": "daniel.kim",
+       "offset": 13
+      },
+      {
+       "id": "mem_8cfb78b03b",
+       "name": "Ritu Saxena",
+       "role": "Engineer",
+       "user": "ritu.saxena",
+       "offset": 18
+      },
+      {
+       "id": "mem_e0bfcb4d4a",
+       "name": "Manoj Pillai",
+       "role": "Engineer",
+       "user": "manoj.pillai",
+       "offset": 20
+      },
+      {
+       "id": "mem_f339bfde05",
+       "name": "Grace Lee",
+       "role": "Viewer",
+       "user": "grace.lee",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "priya.sharma",
+      "divya.menon"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_590af149ae",
+        "mem_9224f51d8d",
+        "mem_3b5670b26e",
+        "mem_820cd6ec96",
+        "mem_943c875311",
+        "mem_151da99886",
+        "mem_8cfb78b03b",
+        "mem_e0bfcb4d4a"
+       ],
+       "Secondary": [
+        "mem_bdec38cb2d",
+        "mem_5d1ba0f397"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Priya Sharma, DBA lead",
+        "contact": "ext 4102"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "priya.sharma",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_18e4ccac7e",
+     "name": "DBA roster",
+     "team": "DBA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_bdec38cb2d",
+       "name": "Priya Sharma",
+       "role": "Lead",
+       "user": "priya.sharma",
+       "offset": 0
+      },
+      {
+       "id": "mem_5d1ba0f397",
+       "name": "Divya Menon",
+       "role": "Lead",
+       "user": "divya.menon",
+       "offset": 1
+      },
+      {
+       "id": "mem_590af149ae",
+       "name": "Sneha Iyer",
+       "role": "Engineer",
+       "user": "sneha.iyer",
+       "offset": 6
+      },
+      {
+       "id": "mem_9224f51d8d",
+       "name": "Ashok Rao",
+       "role": "Engineer",
+       "user": "ashok.rao",
+       "offset": 11
+      },
+      {
+       "id": "mem_3b5670b26e",
+       "name": "Neha Gupta",
+       "role": "Engineer",
+       "user": "neha.gupta",
+       "offset": 16
+      },
+      {
+       "id": "mem_820cd6ec96",
+       "name": "Joseph Mathew",
+       "role": "Engineer",
+       "user": "joseph.mathew",
+       "offset": 3
+      },
+      {
+       "id": "mem_943c875311",
+       "name": "Swati Kulkarni",
+       "role": "Engineer",
+       "user": "swati.kulkarni",
+       "offset": 8
+      },
+      {
+       "id": "mem_151da99886",
+       "name": "Daniel Kim",
+       "role": "Engineer",
+       "user": "daniel.kim",
+       "offset": 13
+      },
+      {
+       "id": "mem_8cfb78b03b",
+       "name": "Ritu Saxena",
+       "role": "Engineer",
+       "user": "ritu.saxena",
+       "offset": 18
+      },
+      {
+       "id": "mem_e0bfcb4d4a",
+       "name": "Manoj Pillai",
+       "role": "Engineer",
+       "user": "manoj.pillai",
+       "offset": 20
+      },
+      {
+       "id": "mem_f339bfde05",
+       "name": "Grace Lee",
+       "role": "Viewer",
+       "user": "grace.lee",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "priya.sharma",
+      "divya.menon"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_590af149ae",
+        "mem_9224f51d8d",
+        "mem_3b5670b26e",
+        "mem_820cd6ec96",
+        "mem_943c875311",
+        "mem_151da99886",
+        "mem_8cfb78b03b",
+        "mem_e0bfcb4d4a"
+       ],
+       "Secondary": [
+        "mem_bdec38cb2d",
+        "mem_5d1ba0f397"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Priya Sharma, DBA lead",
+        "contact": "ext 4102"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_e06fec6ba0",
+       "member_id": "mem_820cd6ec96",
+       "start": "2026-11-16",
+       "end": "2026-11-16",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "priya.sharma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "priya.sharma",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "sneha.iyer",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_18e4ccac7e",
+     "name": "DBA roster",
+     "team": "DBA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_bdec38cb2d",
+       "name": "Priya Sharma",
+       "role": "Lead",
+       "user": "priya.sharma",
+       "offset": 0
+      },
+      {
+       "id": "mem_5d1ba0f397",
+       "name": "Divya Menon",
+       "role": "Lead",
+       "user": "divya.menon",
+       "offset": 1
+      },
+      {
+       "id": "mem_590af149ae",
+       "name": "Sneha Iyer",
+       "role": "Engineer",
+       "user": "sneha.iyer",
+       "offset": 6
+      },
+      {
+       "id": "mem_9224f51d8d",
+       "name": "Ashok Rao",
+       "role": "Engineer",
+       "user": "ashok.rao",
+       "offset": 11
+      },
+      {
+       "id": "mem_3b5670b26e",
+       "name": "Neha Gupta",
+       "role": "Engineer",
+       "user": "neha.gupta",
+       "offset": 16
+      },
+      {
+       "id": "mem_820cd6ec96",
+       "name": "Joseph Mathew",
+       "role": "Engineer",
+       "user": "joseph.mathew",
+       "offset": 3
+      },
+      {
+       "id": "mem_943c875311",
+       "name": "Swati Kulkarni",
+       "role": "Engineer",
+       "user": "swati.kulkarni",
+       "offset": 8
+      },
+      {
+       "id": "mem_151da99886",
+       "name": "Daniel Kim",
+       "role": "Engineer",
+       "user": "daniel.kim",
+       "offset": 13
+      },
+      {
+       "id": "mem_8cfb78b03b",
+       "name": "Ritu Saxena",
+       "role": "Engineer",
+       "user": "ritu.saxena",
+       "offset": 18
+      },
+      {
+       "id": "mem_e0bfcb4d4a",
+       "name": "Manoj Pillai",
+       "role": "Engineer",
+       "user": "manoj.pillai",
+       "offset": 20
+      },
+      {
+       "id": "mem_f339bfde05",
+       "name": "Grace Lee",
+       "role": "Viewer",
+       "user": "grace.lee",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "priya.sharma",
+      "divya.menon"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_590af149ae",
+        "mem_9224f51d8d",
+        "mem_3b5670b26e",
+        "mem_820cd6ec96",
+        "mem_943c875311",
+        "mem_151da99886",
+        "mem_8cfb78b03b",
+        "mem_e0bfcb4d4a"
+       ],
+       "Secondary": [
+        "mem_bdec38cb2d",
+        "mem_5d1ba0f397"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Priya Sharma, DBA lead",
+        "contact": "ext 4102"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_e06fec6ba0",
+       "member_id": "mem_820cd6ec96",
+       "start": "2026-11-16",
+       "end": "2026-11-16",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "priya.sharma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "priya.sharma",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_2281207608",
+       "member_id": "mem_e0bfcb4d4a",
+       "start": "2026-11-28",
+       "end": "2026-11-28",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "priya.sharma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "priya.sharma",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "ashok.rao",
+    "action": "Request swap",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_18e4ccac7e",
+     "name": "DBA roster",
+     "team": "DBA",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_bdec38cb2d",
+       "name": "Priya Sharma",
+       "role": "Lead",
+       "user": "priya.sharma",
+       "offset": 0
+      },
+      {
+       "id": "mem_5d1ba0f397",
+       "name": "Divya Menon",
+       "role": "Lead",
+       "user": "divya.menon",
+       "offset": 1
+      },
+      {
+       "id": "mem_590af149ae",
+       "name": "Sneha Iyer",
+       "role": "Engineer",
+       "user": "sneha.iyer",
+       "offset": 6
+      },
+      {
+       "id": "mem_9224f51d8d",
+       "name": "Ashok Rao",
+       "role": "Engineer",
+       "user": "ashok.rao",
+       "offset": 11
+      },
+      {
+       "id": "mem_3b5670b26e",
+       "name": "Neha Gupta",
+       "role": "Engineer",
+       "user": "neha.gupta",
+       "offset": 16
+      },
+      {
+       "id": "mem_820cd6ec96",
+       "name": "Joseph Mathew",
+       "role": "Engineer",
+       "user": "joseph.mathew",
+       "offset": 3
+      },
+      {
+       "id": "mem_943c875311",
+       "name": "Swati Kulkarni",
+       "role": "Engineer",
+       "user": "swati.kulkarni",
+       "offset": 8
+      },
+      {
+       "id": "mem_151da99886",
+       "name": "Daniel Kim",
+       "role": "Engineer",
+       "user": "daniel.kim",
+       "offset": 13
+      },
+      {
+       "id": "mem_8cfb78b03b",
+       "name": "Ritu Saxena",
+       "role": "Engineer",
+       "user": "ritu.saxena",
+       "offset": 18
+      },
+      {
+       "id": "mem_e0bfcb4d4a",
+       "name": "Manoj Pillai",
+       "role": "Engineer",
+       "user": "manoj.pillai",
+       "offset": 20
+      },
+      {
+       "id": "mem_f339bfde05",
+       "name": "Grace Lee",
+       "role": "Viewer",
+       "user": "grace.lee",
+       "offset": 0
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "priya.sharma",
+      "divya.menon"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_590af149ae",
+        "mem_9224f51d8d",
+        "mem_3b5670b26e",
+        "mem_820cd6ec96",
+        "mem_943c875311",
+        "mem_151da99886",
+        "mem_8cfb78b03b",
+        "mem_e0bfcb4d4a"
+       ],
+       "Secondary": [
+        "mem_bdec38cb2d",
+        "mem_5d1ba0f397"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Priya Sharma, DBA lead",
+        "contact": "ext 4102"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_e06fec6ba0",
+       "member_id": "mem_820cd6ec96",
+       "start": "2026-11-16",
+       "end": "2026-11-16",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "priya.sharma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "priya.sharma",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_2281207608",
+       "member_id": "mem_e0bfcb4d4a",
+       "start": "2026-11-28",
+       "end": "2026-11-28",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "priya.sharma",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "priya.sharma",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_e50efe6786",
+       "member_id": "mem_590af149ae",
+       "start": "2026-12-21",
+       "end": "2026-12-23",
+       "type": "Annual",
+       "note": "Family visit",
+       "status": "pending",
+       "approver": "priya.sharma",
+       "requested_by": "sneha.iyer",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": null,
+       "decided_at": null
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   }
+  ],
+  "ros_afbb61dacc": [
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "vikram.rao",
+    "action": "Request leave",
+    "roster": {
+     "template": "standard",
+     "layout": "by_person",
+     "id": "ros_afbb61dacc",
+     "name": "Boomi roster",
+     "team": "Boomi",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 14
+     },
+     "shifts": [
+      {
+       "code": "D",
+       "name": "Day",
+       "start": "09:00",
+       "end": "18:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 3,
+       "max_staff": null,
+       "color": "#43C08F",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "E",
+       "name": "Evening",
+       "start": "14:00",
+       "end": "23:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "D",
+       "D",
+       "D",
+       "D",
+       "D",
+       "OFF",
+       "OFF",
+       "E",
+       "E",
+       "E",
+       "E",
+       "E",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_2b6812fa8e",
+       "name": "Vikram Rao",
+       "role": "Lead",
+       "user": "vikram.rao",
+       "offset": 0
+      },
+      {
+       "id": "mem_72d67f607c",
+       "name": "Omar Khan",
+       "role": "Engineer",
+       "user": "omar.khan",
+       "offset": 7
+      },
+      {
+       "id": "mem_1e1926596a",
+       "name": "Lakshmi Iyer",
+       "role": "Engineer",
+       "user": "lakshmi.iyer",
+       "offset": 0
+      },
+      {
+       "id": "mem_52fd47598a",
+       "name": "Arjun Bose",
+       "role": "Engineer",
+       "user": "arjun.bose",
+       "offset": 7
+      },
+      {
+       "id": "mem_a40126b13d",
+       "name": "Sara Thomas",
+       "role": "Engineer",
+       "user": "sara.thomas",
+       "offset": 0
+      },
+      {
+       "id": "mem_53e5959452",
+       "name": "Kiran Shetty",
+       "role": "Engineer",
+       "user": "kiran.shetty",
+       "offset": 7
+      },
+      {
+       "id": "mem_c452b9af10",
+       "name": "Maya Singh",
+       "role": "Engineer",
+       "user": "maya.singh",
+       "offset": 0
+      },
+      {
+       "id": "mem_cca2e2765f",
+       "name": "Ravi Nair",
+       "role": "Engineer",
+       "user": "ravi.nair",
+       "offset": 7
+      },
+      {
+       "id": "mem_3c913641ab",
+       "name": "Tanvi Joshi",
+       "role": "Engineer",
+       "user": "tanvi.joshi",
+       "offset": 0
+      },
+      {
+       "id": "mem_36a0ea3281",
+       "name": "Ben Cole",
+       "role": "Viewer",
+       "user": "ben.cole",
+       "offset": 7
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "vikram.rao"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_72d67f607c",
+        "mem_1e1926596a",
+        "mem_52fd47598a",
+        "mem_a40126b13d",
+        "mem_53e5959452",
+        "mem_c452b9af10",
+        "mem_cca2e2765f",
+        "mem_3c913641ab"
+       ],
+       "Secondary": [
+        "mem_2b6812fa8e"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Vikram Rao, Boomi lead",
+        "contact": "ext 4103"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "vikram.rao",
+    "action": "Request leave",
+    "roster": {
+     "template": "standard",
+     "layout": "by_person",
+     "id": "ros_afbb61dacc",
+     "name": "Boomi roster",
+     "team": "Boomi",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 14
+     },
+     "shifts": [
+      {
+       "code": "D",
+       "name": "Day",
+       "start": "09:00",
+       "end": "18:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 3,
+       "max_staff": null,
+       "color": "#43C08F",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "E",
+       "name": "Evening",
+       "start": "14:00",
+       "end": "23:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "D",
+       "D",
+       "D",
+       "D",
+       "D",
+       "OFF",
+       "OFF",
+       "E",
+       "E",
+       "E",
+       "E",
+       "E",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_2b6812fa8e",
+       "name": "Vikram Rao",
+       "role": "Lead",
+       "user": "vikram.rao",
+       "offset": 0
+      },
+      {
+       "id": "mem_72d67f607c",
+       "name": "Omar Khan",
+       "role": "Engineer",
+       "user": "omar.khan",
+       "offset": 7
+      },
+      {
+       "id": "mem_1e1926596a",
+       "name": "Lakshmi Iyer",
+       "role": "Engineer",
+       "user": "lakshmi.iyer",
+       "offset": 0
+      },
+      {
+       "id": "mem_52fd47598a",
+       "name": "Arjun Bose",
+       "role": "Engineer",
+       "user": "arjun.bose",
+       "offset": 7
+      },
+      {
+       "id": "mem_a40126b13d",
+       "name": "Sara Thomas",
+       "role": "Engineer",
+       "user": "sara.thomas",
+       "offset": 0
+      },
+      {
+       "id": "mem_53e5959452",
+       "name": "Kiran Shetty",
+       "role": "Engineer",
+       "user": "kiran.shetty",
+       "offset": 7
+      },
+      {
+       "id": "mem_c452b9af10",
+       "name": "Maya Singh",
+       "role": "Engineer",
+       "user": "maya.singh",
+       "offset": 0
+      },
+      {
+       "id": "mem_cca2e2765f",
+       "name": "Ravi Nair",
+       "role": "Engineer",
+       "user": "ravi.nair",
+       "offset": 7
+      },
+      {
+       "id": "mem_3c913641ab",
+       "name": "Tanvi Joshi",
+       "role": "Engineer",
+       "user": "tanvi.joshi",
+       "offset": 0
+      },
+      {
+       "id": "mem_36a0ea3281",
+       "name": "Ben Cole",
+       "role": "Viewer",
+       "user": "ben.cole",
+       "offset": 7
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "vikram.rao"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_72d67f607c",
+        "mem_1e1926596a",
+        "mem_52fd47598a",
+        "mem_a40126b13d",
+        "mem_53e5959452",
+        "mem_c452b9af10",
+        "mem_cca2e2765f",
+        "mem_3c913641ab"
+       ],
+       "Secondary": [
+        "mem_2b6812fa8e"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Vikram Rao, Boomi lead",
+        "contact": "ext 4103"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_9fbd5bc052",
+       "member_id": "mem_72d67f607c",
+       "start": "2026-11-27",
+       "end": "2026-11-29",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "vikram.rao",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "vikram.rao",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "omar.khan",
+    "action": "Request leave",
+    "roster": {
+     "template": "standard",
+     "layout": "by_person",
+     "id": "ros_afbb61dacc",
+     "name": "Boomi roster",
+     "team": "Boomi",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 14
+     },
+     "shifts": [
+      {
+       "code": "D",
+       "name": "Day",
+       "start": "09:00",
+       "end": "18:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 3,
+       "max_staff": null,
+       "color": "#43C08F",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "E",
+       "name": "Evening",
+       "start": "14:00",
+       "end": "23:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "D",
+       "D",
+       "D",
+       "D",
+       "D",
+       "OFF",
+       "OFF",
+       "E",
+       "E",
+       "E",
+       "E",
+       "E",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_2b6812fa8e",
+       "name": "Vikram Rao",
+       "role": "Lead",
+       "user": "vikram.rao",
+       "offset": 0
+      },
+      {
+       "id": "mem_72d67f607c",
+       "name": "Omar Khan",
+       "role": "Engineer",
+       "user": "omar.khan",
+       "offset": 7
+      },
+      {
+       "id": "mem_1e1926596a",
+       "name": "Lakshmi Iyer",
+       "role": "Engineer",
+       "user": "lakshmi.iyer",
+       "offset": 0
+      },
+      {
+       "id": "mem_52fd47598a",
+       "name": "Arjun Bose",
+       "role": "Engineer",
+       "user": "arjun.bose",
+       "offset": 7
+      },
+      {
+       "id": "mem_a40126b13d",
+       "name": "Sara Thomas",
+       "role": "Engineer",
+       "user": "sara.thomas",
+       "offset": 0
+      },
+      {
+       "id": "mem_53e5959452",
+       "name": "Kiran Shetty",
+       "role": "Engineer",
+       "user": "kiran.shetty",
+       "offset": 7
+      },
+      {
+       "id": "mem_c452b9af10",
+       "name": "Maya Singh",
+       "role": "Engineer",
+       "user": "maya.singh",
+       "offset": 0
+      },
+      {
+       "id": "mem_cca2e2765f",
+       "name": "Ravi Nair",
+       "role": "Engineer",
+       "user": "ravi.nair",
+       "offset": 7
+      },
+      {
+       "id": "mem_3c913641ab",
+       "name": "Tanvi Joshi",
+       "role": "Engineer",
+       "user": "tanvi.joshi",
+       "offset": 0
+      },
+      {
+       "id": "mem_36a0ea3281",
+       "name": "Ben Cole",
+       "role": "Viewer",
+       "user": "ben.cole",
+       "offset": 7
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "vikram.rao"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_72d67f607c",
+        "mem_1e1926596a",
+        "mem_52fd47598a",
+        "mem_a40126b13d",
+        "mem_53e5959452",
+        "mem_c452b9af10",
+        "mem_cca2e2765f",
+        "mem_3c913641ab"
+       ],
+       "Secondary": [
+        "mem_2b6812fa8e"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Vikram Rao, Boomi lead",
+        "contact": "ext 4103"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_9fbd5bc052",
+       "member_id": "mem_72d67f607c",
+       "start": "2026-11-27",
+       "end": "2026-11-29",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "vikram.rao",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "vikram.rao",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_d8ae40a5f5",
+       "member_id": "mem_cca2e2765f",
+       "start": "2026-11-27",
+       "end": "2026-11-27",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "vikram.rao",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "vikram.rao",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "lakshmi.iyer",
+    "action": "Request swap",
+    "roster": {
+     "template": "standard",
+     "layout": "by_person",
+     "id": "ros_afbb61dacc",
+     "name": "Boomi roster",
+     "team": "Boomi",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 14
+     },
+     "shifts": [
+      {
+       "code": "D",
+       "name": "Day",
+       "start": "09:00",
+       "end": "18:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 3,
+       "max_staff": null,
+       "color": "#43C08F",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "E",
+       "name": "Evening",
+       "start": "14:00",
+       "end": "23:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "D",
+       "D",
+       "D",
+       "D",
+       "D",
+       "OFF",
+       "OFF",
+       "E",
+       "E",
+       "E",
+       "E",
+       "E",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_2b6812fa8e",
+       "name": "Vikram Rao",
+       "role": "Lead",
+       "user": "vikram.rao",
+       "offset": 0
+      },
+      {
+       "id": "mem_72d67f607c",
+       "name": "Omar Khan",
+       "role": "Engineer",
+       "user": "omar.khan",
+       "offset": 7
+      },
+      {
+       "id": "mem_1e1926596a",
+       "name": "Lakshmi Iyer",
+       "role": "Engineer",
+       "user": "lakshmi.iyer",
+       "offset": 0
+      },
+      {
+       "id": "mem_52fd47598a",
+       "name": "Arjun Bose",
+       "role": "Engineer",
+       "user": "arjun.bose",
+       "offset": 7
+      },
+      {
+       "id": "mem_a40126b13d",
+       "name": "Sara Thomas",
+       "role": "Engineer",
+       "user": "sara.thomas",
+       "offset": 0
+      },
+      {
+       "id": "mem_53e5959452",
+       "name": "Kiran Shetty",
+       "role": "Engineer",
+       "user": "kiran.shetty",
+       "offset": 7
+      },
+      {
+       "id": "mem_c452b9af10",
+       "name": "Maya Singh",
+       "role": "Engineer",
+       "user": "maya.singh",
+       "offset": 0
+      },
+      {
+       "id": "mem_cca2e2765f",
+       "name": "Ravi Nair",
+       "role": "Engineer",
+       "user": "ravi.nair",
+       "offset": 7
+      },
+      {
+       "id": "mem_3c913641ab",
+       "name": "Tanvi Joshi",
+       "role": "Engineer",
+       "user": "tanvi.joshi",
+       "offset": 0
+      },
+      {
+       "id": "mem_36a0ea3281",
+       "name": "Ben Cole",
+       "role": "Viewer",
+       "user": "ben.cole",
+       "offset": 7
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "vikram.rao"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_72d67f607c",
+        "mem_1e1926596a",
+        "mem_52fd47598a",
+        "mem_a40126b13d",
+        "mem_53e5959452",
+        "mem_c452b9af10",
+        "mem_cca2e2765f",
+        "mem_3c913641ab"
+       ],
+       "Secondary": [
+        "mem_2b6812fa8e"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Vikram Rao, Boomi lead",
+        "contact": "ext 4103"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_9fbd5bc052",
+       "member_id": "mem_72d67f607c",
+       "start": "2026-11-27",
+       "end": "2026-11-29",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "vikram.rao",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "vikram.rao",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_d8ae40a5f5",
+       "member_id": "mem_cca2e2765f",
+       "start": "2026-11-27",
+       "end": "2026-11-27",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "vikram.rao",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "vikram.rao",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_0df58df517",
+       "member_id": "mem_72d67f607c",
+       "start": "2026-12-21",
+       "end": "2026-12-23",
+       "type": "Annual",
+       "note": "Family visit",
+       "status": "pending",
+       "approver": "vikram.rao",
+       "requested_by": "omar.khan",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": null,
+       "decided_at": null
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   }
+  ],
+  "ros_ce0ccc9bbb": [
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "anjali.nair",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_ce0ccc9bbb",
+     "name": "NOC roster",
+     "team": "NOC",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_09cbf481b9",
+       "name": "Anjali Nair",
+       "role": "Lead",
+       "user": "anjali.nair",
+       "offset": 0
+      },
+      {
+       "id": "mem_5a457207aa",
+       "name": "Harish Kumar",
+       "role": "Lead",
+       "user": "harish.kumar",
+       "offset": 1
+      },
+      {
+       "id": "mem_ca91dc6efc",
+       "name": "Dinesh Yadav",
+       "role": "Engineer",
+       "user": "dinesh.yadav",
+       "offset": 6
+      },
+      {
+       "id": "mem_39c274ffb6",
+       "name": "Aisha Khan",
+       "role": "Engineer",
+       "user": "aisha.khan",
+       "offset": 11
+      },
+      {
+       "id": "mem_4eb0ffa9d1",
+       "name": "George Paul",
+       "role": "Engineer",
+       "user": "george.paul",
+       "offset": 16
+      },
+      {
+       "id": "mem_05e31e6acb",
+       "name": "Shruti Rao",
+       "role": "Engineer",
+       "user": "shruti.rao",
+       "offset": 3
+      },
+      {
+       "id": "mem_1219ffd783",
+       "name": "Naveen Reddy",
+       "role": "Engineer",
+       "user": "naveen.reddy",
+       "offset": 8
+      },
+      {
+       "id": "mem_4f4afab8ec",
+       "name": "Emma Wright",
+       "role": "Engineer",
+       "user": "emma.wright",
+       "offset": 13
+      },
+      {
+       "id": "mem_9fb856d907",
+       "name": "Prakash Iyer",
+       "role": "Viewer",
+       "user": "prakash.iyer",
+       "offset": 18
+      },
+      {
+       "id": "mem_ffe3d51656",
+       "name": "Leah Morris",
+       "role": "Viewer",
+       "user": "leah.morris",
+       "offset": 20
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "anjali.nair",
+      "harish.kumar"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_ca91dc6efc",
+        "mem_39c274ffb6",
+        "mem_4eb0ffa9d1",
+        "mem_05e31e6acb",
+        "mem_1219ffd783",
+        "mem_4f4afab8ec"
+       ],
+       "Secondary": [
+        "mem_09cbf481b9",
+        "mem_5a457207aa"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Anjali Nair, NOC lead",
+        "contact": "ext 4104"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "anjali.nair",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_ce0ccc9bbb",
+     "name": "NOC roster",
+     "team": "NOC",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_09cbf481b9",
+       "name": "Anjali Nair",
+       "role": "Lead",
+       "user": "anjali.nair",
+       "offset": 0
+      },
+      {
+       "id": "mem_5a457207aa",
+       "name": "Harish Kumar",
+       "role": "Lead",
+       "user": "harish.kumar",
+       "offset": 1
+      },
+      {
+       "id": "mem_ca91dc6efc",
+       "name": "Dinesh Yadav",
+       "role": "Engineer",
+       "user": "dinesh.yadav",
+       "offset": 6
+      },
+      {
+       "id": "mem_39c274ffb6",
+       "name": "Aisha Khan",
+       "role": "Engineer",
+       "user": "aisha.khan",
+       "offset": 11
+      },
+      {
+       "id": "mem_4eb0ffa9d1",
+       "name": "George Paul",
+       "role": "Engineer",
+       "user": "george.paul",
+       "offset": 16
+      },
+      {
+       "id": "mem_05e31e6acb",
+       "name": "Shruti Rao",
+       "role": "Engineer",
+       "user": "shruti.rao",
+       "offset": 3
+      },
+      {
+       "id": "mem_1219ffd783",
+       "name": "Naveen Reddy",
+       "role": "Engineer",
+       "user": "naveen.reddy",
+       "offset": 8
+      },
+      {
+       "id": "mem_4f4afab8ec",
+       "name": "Emma Wright",
+       "role": "Engineer",
+       "user": "emma.wright",
+       "offset": 13
+      },
+      {
+       "id": "mem_9fb856d907",
+       "name": "Prakash Iyer",
+       "role": "Viewer",
+       "user": "prakash.iyer",
+       "offset": 18
+      },
+      {
+       "id": "mem_ffe3d51656",
+       "name": "Leah Morris",
+       "role": "Viewer",
+       "user": "leah.morris",
+       "offset": 20
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "anjali.nair",
+      "harish.kumar"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_ca91dc6efc",
+        "mem_39c274ffb6",
+        "mem_4eb0ffa9d1",
+        "mem_05e31e6acb",
+        "mem_1219ffd783",
+        "mem_4f4afab8ec"
+       ],
+       "Secondary": [
+        "mem_09cbf481b9",
+        "mem_5a457207aa"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Anjali Nair, NOC lead",
+        "contact": "ext 4104"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_2e4f10dcdf",
+       "member_id": "mem_ca91dc6efc",
+       "start": "2026-12-01",
+       "end": "2026-12-02",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "anjali.nair",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "anjali.nair",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "dinesh.yadav",
+    "action": "Request leave",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_ce0ccc9bbb",
+     "name": "NOC roster",
+     "team": "NOC",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_09cbf481b9",
+       "name": "Anjali Nair",
+       "role": "Lead",
+       "user": "anjali.nair",
+       "offset": 0
+      },
+      {
+       "id": "mem_5a457207aa",
+       "name": "Harish Kumar",
+       "role": "Lead",
+       "user": "harish.kumar",
+       "offset": 1
+      },
+      {
+       "id": "mem_ca91dc6efc",
+       "name": "Dinesh Yadav",
+       "role": "Engineer",
+       "user": "dinesh.yadav",
+       "offset": 6
+      },
+      {
+       "id": "mem_39c274ffb6",
+       "name": "Aisha Khan",
+       "role": "Engineer",
+       "user": "aisha.khan",
+       "offset": 11
+      },
+      {
+       "id": "mem_4eb0ffa9d1",
+       "name": "George Paul",
+       "role": "Engineer",
+       "user": "george.paul",
+       "offset": 16
+      },
+      {
+       "id": "mem_05e31e6acb",
+       "name": "Shruti Rao",
+       "role": "Engineer",
+       "user": "shruti.rao",
+       "offset": 3
+      },
+      {
+       "id": "mem_1219ffd783",
+       "name": "Naveen Reddy",
+       "role": "Engineer",
+       "user": "naveen.reddy",
+       "offset": 8
+      },
+      {
+       "id": "mem_4f4afab8ec",
+       "name": "Emma Wright",
+       "role": "Engineer",
+       "user": "emma.wright",
+       "offset": 13
+      },
+      {
+       "id": "mem_9fb856d907",
+       "name": "Prakash Iyer",
+       "role": "Viewer",
+       "user": "prakash.iyer",
+       "offset": 18
+      },
+      {
+       "id": "mem_ffe3d51656",
+       "name": "Leah Morris",
+       "role": "Viewer",
+       "user": "leah.morris",
+       "offset": 20
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "anjali.nair",
+      "harish.kumar"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_ca91dc6efc",
+        "mem_39c274ffb6",
+        "mem_4eb0ffa9d1",
+        "mem_05e31e6acb",
+        "mem_1219ffd783",
+        "mem_4f4afab8ec"
+       ],
+       "Secondary": [
+        "mem_09cbf481b9",
+        "mem_5a457207aa"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Anjali Nair, NOC lead",
+        "contact": "ext 4104"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_2e4f10dcdf",
+       "member_id": "mem_ca91dc6efc",
+       "start": "2026-12-01",
+       "end": "2026-12-02",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "anjali.nair",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "anjali.nair",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_e46e378522",
+       "member_id": "mem_1219ffd783",
+       "start": "2026-12-07",
+       "end": "2026-12-08",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "anjali.nair",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "anjali.nair",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   },
+   {
+    "at": "2026-11-21T15:44:33-06:00",
+    "by": "aisha.khan",
+    "action": "Request swap",
+    "roster": {
+     "template": "three_shift",
+     "layout": "by_shift",
+     "id": "ros_ce0ccc9bbb",
+     "name": "NOC roster",
+     "team": "NOC",
+     "start_date": "2026-10-05",
+     "cycle": {
+      "type": "custom",
+      "length_days": 21
+     },
+     "shifts": [
+      {
+       "code": "M",
+       "name": "Morning",
+       "start": "06:00",
+       "end": "15:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#F2C76E",
+       "log_shift": "Morning"
+      },
+      {
+       "code": "A",
+       "name": "Afternoon",
+       "start": "13:00",
+       "end": "22:00",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#7AA7FF",
+       "log_shift": "Afternoon"
+      },
+      {
+       "code": "N",
+       "name": "Night",
+       "start": "21:30",
+       "end": "06:30",
+       "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "min_staff": 2,
+       "max_staff": null,
+       "color": "#A391F5",
+       "log_shift": "Night"
+      }
+     ],
+     "rotation": {
+      "sequence": [
+       "M",
+       "M",
+       "M",
+       "M",
+       "M",
+       "OFF",
+       "OFF",
+       "A",
+       "A",
+       "A",
+       "A",
+       "A",
+       "OFF",
+       "OFF",
+       "N",
+       "N",
+       "N",
+       "N",
+       "N",
+       "OFF",
+       "OFF"
+      ]
+     },
+     "rules": {
+      "min_rest_hours": 8,
+      "forbidden_sequences": [
+       [
+        "N",
+        "M"
+       ]
+      ],
+      "max_consecutive_days": null,
+      "skip_inactive_days": true,
+      "allow_shared_members": false
+     },
+     "members": [
+      {
+       "id": "mem_09cbf481b9",
+       "name": "Anjali Nair",
+       "role": "Lead",
+       "user": "anjali.nair",
+       "offset": 0
+      },
+      {
+       "id": "mem_5a457207aa",
+       "name": "Harish Kumar",
+       "role": "Lead",
+       "user": "harish.kumar",
+       "offset": 1
+      },
+      {
+       "id": "mem_ca91dc6efc",
+       "name": "Dinesh Yadav",
+       "role": "Engineer",
+       "user": "dinesh.yadav",
+       "offset": 6
+      },
+      {
+       "id": "mem_39c274ffb6",
+       "name": "Aisha Khan",
+       "role": "Engineer",
+       "user": "aisha.khan",
+       "offset": 11
+      },
+      {
+       "id": "mem_4eb0ffa9d1",
+       "name": "George Paul",
+       "role": "Engineer",
+       "user": "george.paul",
+       "offset": 16
+      },
+      {
+       "id": "mem_05e31e6acb",
+       "name": "Shruti Rao",
+       "role": "Engineer",
+       "user": "shruti.rao",
+       "offset": 3
+      },
+      {
+       "id": "mem_1219ffd783",
+       "name": "Naveen Reddy",
+       "role": "Engineer",
+       "user": "naveen.reddy",
+       "offset": 8
+      },
+      {
+       "id": "mem_4f4afab8ec",
+       "name": "Emma Wright",
+       "role": "Engineer",
+       "user": "emma.wright",
+       "offset": 13
+      },
+      {
+       "id": "mem_9fb856d907",
+       "name": "Prakash Iyer",
+       "role": "Viewer",
+       "user": "prakash.iyer",
+       "offset": 18
+      },
+      {
+       "id": "mem_ffe3d51656",
+       "name": "Leah Morris",
+       "role": "Viewer",
+       "user": "leah.morris",
+       "offset": 20
+      }
+     ],
+     "approvals": {
+      "leave": "lead",
+      "swap": "lead"
+     },
+     "approvers": [
+      "anjali.nair",
+      "harish.kumar"
+     ],
+     "leave_types": [
+      "Annual",
+      "Sick",
+      "Training",
+      "Comp off",
+      "Other"
+     ],
+     "holidays": {
+      "region": "IN",
+      "subdivision": "KA",
+      "custom": [
+       {
+        "date": "2026-11-27",
+        "name": "Company foundation day"
+       }
+      ],
+      "ignore": []
+     },
+     "oncall": {
+      "enabled": true,
+      "roles": [
+       "Primary",
+       "Secondary"
+      ],
+      "rotation_days": 7,
+      "start_date": "2026-11-02",
+      "order": {
+       "Primary": [
+        "mem_ca91dc6efc",
+        "mem_39c274ffb6",
+        "mem_4eb0ffa9d1",
+        "mem_05e31e6acb",
+        "mem_1219ffd783",
+        "mem_4f4afab8ec"
+       ],
+       "Secondary": [
+        "mem_09cbf481b9",
+        "mem_5a457207aa"
+       ]
+      },
+      "escalation": [
+       {
+        "level": 1,
+        "name": "Anjali Nair, NOC lead",
+        "contact": "ext 4104"
+       },
+       {
+        "level": 2,
+        "name": "Service delivery manager",
+        "contact": "ext 4000"
+       }
+      ],
+      "overrides": {}
+     },
+     "overrides": {},
+     "leaves": [
+      {
+       "id": "lv_2e4f10dcdf",
+       "member_id": "mem_ca91dc6efc",
+       "start": "2026-12-01",
+       "end": "2026-12-02",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "anjali.nair",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "anjali.nair",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_e46e378522",
+       "member_id": "mem_1219ffd783",
+       "start": "2026-12-07",
+       "end": "2026-12-08",
+       "type": "Annual",
+       "note": "Planned leave",
+       "status": "approved",
+       "approver": null,
+       "requested_by": "anjali.nair",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": "anjali.nair",
+       "decided_at": "2026-11-21T15:44:33-06:00"
+      },
+      {
+       "id": "lv_dd16550a4e",
+       "member_id": "mem_ca91dc6efc",
+       "start": "2026-12-21",
+       "end": "2026-12-23",
+       "type": "Annual",
+       "note": "Family visit",
+       "status": "pending",
+       "approver": "anjali.nair",
+       "requested_by": "dinesh.yadav",
+       "requested_at": "2026-11-21T15:44:33-06:00",
+       "decided_by": null,
+       "decided_at": null
+      }
+     ],
+     "swaps": [],
+     "created_at": "2026-11-21T15:44:33-06:00",
+     "updated_at": "2026-11-21T15:44:33-06:00"
+    }
+   }
+  ]
+ },
+ "audit": [
+  {
+   "at": "2026-11-21T15:44:32-06:00",
+   "by": "admin",
+   "action": "Create roster",
+   "roster": "ros_758bde7f9b"
+  },
+  {
+   "at": "2026-11-21T15:44:32-06:00",
+   "by": "arun.kumar",
+   "action": "Request leave",
+   "roster": "ros_758bde7f9b"
+  },
+  {
+   "at": "2026-11-21T15:44:32-06:00",
+   "by": "arun.kumar",
+   "action": "Request leave",
+   "roster": "ros_758bde7f9b"
+  },
+  {
+   "at": "2026-11-21T15:44:32-06:00",
+   "by": "suresh.babu",
+   "action": "Request leave",
+   "roster": "ros_758bde7f9b"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "nikhil.jain",
+   "action": "Request swap",
+   "roster": "ros_758bde7f9b"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "admin",
+   "action": "Create roster",
+   "roster": "ros_1bd4e0253c"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "karthik.reddy",
+   "action": "Request leave",
+   "roster": "ros_1bd4e0253c"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "karthik.reddy",
+   "action": "Request leave",
+   "roster": "ros_1bd4e0253c"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "rahul.verma",
+   "action": "Request leave",
+   "roster": "ros_1bd4e0253c"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "mark.evans",
+   "action": "Request swap",
+   "roster": "ros_1bd4e0253c"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "admin",
+   "action": "Create roster",
+   "roster": "ros_18e4ccac7e"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "priya.sharma",
+   "action": "Request leave",
+   "roster": "ros_18e4ccac7e"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "priya.sharma",
+   "action": "Request leave",
+   "roster": "ros_18e4ccac7e"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "sneha.iyer",
+   "action": "Request leave",
+   "roster": "ros_18e4ccac7e"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "ashok.rao",
+   "action": "Request swap",
+   "roster": "ros_18e4ccac7e"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "admin",
+   "action": "Create roster",
+   "roster": "ros_afbb61dacc"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "vikram.rao",
+   "action": "Request leave",
+   "roster": "ros_afbb61dacc"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "vikram.rao",
+   "action": "Request leave",
+   "roster": "ros_afbb61dacc"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "omar.khan",
+   "action": "Request leave",
+   "roster": "ros_afbb61dacc"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "lakshmi.iyer",
+   "action": "Request swap",
+   "roster": "ros_afbb61dacc"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "admin",
+   "action": "Create roster",
+   "roster": "ros_ce0ccc9bbb"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "anjali.nair",
+   "action": "Request leave",
+   "roster": "ros_ce0ccc9bbb"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "anjali.nair",
+   "action": "Request leave",
+   "roster": "ros_ce0ccc9bbb"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "dinesh.yadav",
+   "action": "Request leave",
+   "roster": "ros_ce0ccc9bbb"
+  },
+  {
+   "at": "2026-11-21T15:44:33-06:00",
+   "by": "aisha.khan",
+   "action": "Request swap",
+   "roster": "ros_ce0ccc9bbb"
+  }
+ ]
+}

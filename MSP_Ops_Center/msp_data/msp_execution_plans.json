@@ -1,0 +1,1676 @@
+{
+ "schema_version": 1,
+ "tasks": [
+  {
+   "id": "t_92d45b333f99",
+   "date": "2026-11-17",
+   "customer": "Harbourline Retail",
+   "name": "Store ERP database upgrade (shared: Unix SA, DBA, Boomi)",
+   "ticket_id": "CHG-4101",
+   "change_ref": "CHG-4101",
+   "window_start": "2026-11-17 22:00",
+   "window_end": "2026-11-18 03:00",
+   "approver": "Harbourline Retail CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_a9e293ba9c06",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_aae33bcd48dd",
+       "level": 0,
+       "title": "Stop Boomi listeners for store orders",
+       "owner": "Omar Khan",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "systemctl stop atom",
+       "rollback": "systemctl start atom",
+       "expected": "",
+       "custom": {},
+       "team": "Boomi"
+      },
+      {
+       "id": "st_d4e9f49c5387",
+       "level": 0,
+       "title": "Take a full RMAN backup",
+       "owner": "Neha Gupta",
+       "planned_start": "",
+       "approx_min": 40,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "rman target / cmdfile=full.rman",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_7c2e01e7d9b9",
+       "level": 0,
+       "title": "Snapshot the database host",
+       "owner": "Nikhil Jain",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "lvcreate -s -n snap_u01 -L 50G vg01/u01",
+       "rollback": "lvconvert --merge vg01/snap_u01",
+       "expected": "",
+       "custom": {},
+       "team": "Unix SA"
+      }
+     ]
+    },
+    {
+     "id": "ph_07b67446b907",
+     "name": "Upgrade",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_864109df20c8",
+       "level": 0,
+       "title": "Run the database upgrade",
+       "owner": "Swati Kulkarni",
+       "planned_start": "",
+       "approx_min": 90,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "dbupgrade -n 8",
+       "rollback": "Flashback to restore point PRE_UPG",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_309d0e4c9b33",
+       "level": 0,
+       "title": "Apply OS kernel parameters",
+       "owner": "Farah Ali",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "sysctl -p /etc/sysctl.d/99-oracle.conf",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": "Unix SA"
+      }
+     ]
+    },
+    {
+     "id": "ph_4e3086cd5bdd",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_487349635ffa",
+       "level": 0,
+       "title": "Validate and start Boomi listeners",
+       "owner": "Vikram Rao",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "systemctl start atom",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": "Boomi"
+      },
+      {
+       "id": "st_cd5f9d5fb417",
+       "level": 0,
+       "title": "Hand back to the business",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "DBA",
+   "shared_with": []
+  },
+  {
+   "id": "t_f99fe5512ba5",
+   "date": "2026-11-16",
+   "customer": "Acme Corp",
+   "name": "Quarterly OS patching, ERP tier",
+   "ticket_id": "CHG-4102",
+   "change_ref": "CHG-4102",
+   "window_start": "2026-11-16 21:00",
+   "window_end": "2026-11-17 01:00",
+   "approver": "Acme Corp CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_b5e2e2ed0e54",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_7b12ad27092b",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Chen Li",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_5add74c0dcdf",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Arun Kumar",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_da2e9cbdb4a9",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_9a93843bf672",
+       "level": 0,
+       "title": "Quarterly OS patching, ERP tier: main change",
+       "owner": "Lena Fox",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_90451ca5d7b3",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_32ea9a8ebff1",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Arun Kumar",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_ad23c1d23111",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Suresh Babu",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Unix SA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "Unix SA",
+   "shared_with": [
+    "NOC"
+   ]
+  },
+  {
+   "id": "t_8c6a288c3593",
+   "date": "2026-11-19",
+   "customer": "Globex",
+   "name": "SQL Always On failover test",
+   "ticket_id": "CHG-4103",
+   "change_ref": "CHG-4103",
+   "window_start": "2026-11-19 21:00",
+   "window_end": "2026-11-20 01:00",
+   "approver": "Globex CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_cfc9d1608f9d",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_c71845fdb400",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Ritu Saxena",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_70bf1a996a18",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Swati Kulkarni",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_5f1a8d9a7d4f",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_bd1bb96c2110",
+       "level": 0,
+       "title": "SQL Always On failover test: main change",
+       "owner": "Ashok Rao",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_b0ce6da9c7d5",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_fd278ce194e3",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_3b6c403617ba",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "DBA",
+   "shared_with": []
+  },
+  {
+   "id": "t_4ecc4944352e",
+   "date": "2026-11-22",
+   "customer": "Umbrella Health",
+   "name": "ESXi upgrade, cluster HC-01",
+   "ticket_id": "CHG-4104",
+   "change_ref": "CHG-4104",
+   "window_start": "2026-11-22 21:00",
+   "window_end": "2026-11-23 01:00",
+   "approver": "Umbrella Health CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_9e3ac34f3535",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_2fe2c39845f5",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Karthik Reddy",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_4e8243208a90",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Pooja Nair",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_9e5ecb210634",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_056d5fa2d688",
+       "level": 0,
+       "title": "ESXi upgrade, cluster HC-01: main change",
+       "owner": "Rahul Verma",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_c0ae2e34e70a",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_07c250d90a89",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Imran Sheikh",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_1f5eba92d032",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Mark Evans",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "Windows",
+   "shared_with": []
+  },
+  {
+   "id": "t_7c2f92dff0ae",
+   "date": "2026-11-25",
+   "customer": "Greenfield Foods",
+   "name": "Boomi runtime upgrade",
+   "ticket_id": "CHG-4105",
+   "change_ref": "CHG-4105",
+   "window_start": "2026-11-25 21:00",
+   "window_end": "2026-11-26 01:00",
+   "approver": "Greenfield Foods CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_7a5b0f75be0a",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_23084e109880",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Kiran Shetty",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_d6b3aa06581d",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Tanvi Joshi",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_e660e2c4722f",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_926d0ebaaf1c",
+       "level": 0,
+       "title": "Boomi runtime upgrade: main change",
+       "owner": "Omar Khan",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_ab7d5080ce8a",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_873939673615",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Sara Thomas",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_93f58b468595",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Vikram Rao",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Boomi step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "Boomi",
+   "shared_with": []
+  },
+  {
+   "id": "t_d703a6392b43",
+   "date": "2026-11-28",
+   "customer": "Skyway Air",
+   "name": "Firewall firmware upgrade",
+   "ticket_id": "CHG-4106",
+   "change_ref": "CHG-4106",
+   "window_start": "2026-11-28 21:00",
+   "window_end": "2026-11-29 01:00",
+   "approver": "Skyway Air CAB",
+   "status": "Scheduled",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_a8da6a374a42",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_f0e79d259219",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Rahul Verma",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "NOC step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_fc7b7af919cd",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Emma Wright",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "NOC step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_16748fb5669c",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_8c9f32d3b57e",
+       "level": 0,
+       "title": "Firewall firmware upgrade: main change",
+       "owner": "Naveen Reddy",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "NOC step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_853f7ddaa6f3",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_d1db327fdecb",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Emma Wright",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "NOC step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_1c9c8c3536af",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Farah Ali",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "NOC step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "NOC",
+   "shared_with": []
+  },
+  {
+   "id": "t_337413aa6de5",
+   "date": "2026-12-01",
+   "customer": "Lumen Media",
+   "name": "IIS certificate rollover",
+   "ticket_id": "CHG-4107",
+   "change_ref": "CHG-4107",
+   "window_start": "2026-12-01 21:00",
+   "window_end": "2026-12-02 01:00",
+   "approver": "Lumen Media CAB",
+   "status": "Draft",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_f152eae22586",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_f43d241cca8d",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Karthik Reddy",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_19da08d47a51",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Rahul Verma",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_f6c0e7031bf5",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_c2cd0f7a7786",
+       "level": 0,
+       "title": "IIS certificate rollover: main change",
+       "owner": "Karthik Reddy",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_bee94b795452",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_50df0258470f",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Karthik Reddy",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_af3590db4c42",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Olivia Chen",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "Windows step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "Windows",
+   "shared_with": []
+  },
+  {
+   "id": "t_9536396a6ae8",
+   "date": "2026-12-04",
+   "customer": "Cobalt Labs",
+   "name": "PostgreSQL minor upgrade",
+   "ticket_id": "CHG-4108",
+   "change_ref": "CHG-4108",
+   "window_start": "2026-12-04 21:00",
+   "window_end": "2026-12-05 01:00",
+   "approver": "Cobalt Labs CAB",
+   "status": "Draft",
+   "notes": "",
+   "assets": "",
+   "step_columns": [
+    {
+     "key": "title",
+     "label": "Task / step",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "planned_start",
+     "label": "Date & time",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "approx_min",
+     "label": "Approx (min)",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_start",
+     "label": "Actual start",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "actual_end",
+     "label": "Actual end",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "status",
+     "label": "Status",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "notes",
+     "label": "Status notes",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "command",
+     "label": "Command",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "rollback",
+     "label": "Rollback",
+     "core": true,
+     "hidden": false
+    },
+    {
+     "key": "expected",
+     "label": "Expected output",
+     "core": true,
+     "hidden": false
+    }
+   ],
+   "phases": [
+    {
+     "id": "ph_7a6408343a98",
+     "name": "Pre-execution",
+     "checkpoint": true,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_7b35fa947a7d",
+       "level": 0,
+       "title": "Confirm backups and monitoring",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 10,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_150db9992102",
+       "level": 0,
+       "title": "Notify the customer",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_0877cded35e6",
+     "name": "Execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_3b3907057448",
+       "level": 0,
+       "title": "PostgreSQL minor upgrade: main change",
+       "owner": "Manoj Pillai",
+       "planned_start": "",
+       "approx_min": 60,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "Restore from the pre-change snapshot",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    },
+    {
+     "id": "ph_2aa5804d13df",
+     "name": "Post execution",
+     "checkpoint": false,
+     "signed_off_by": "",
+     "signed_off_at": "",
+     "steps": [
+      {
+       "id": "st_986b28e6f050",
+       "level": 0,
+       "title": "Validate services",
+       "owner": "Priya Sharma",
+       "planned_start": "",
+       "approx_min": 15,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      },
+      {
+       "id": "st_63d4b54ef96f",
+       "level": 0,
+       "title": "Update the runbook",
+       "owner": "Swati Kulkarni",
+       "planned_start": "",
+       "approx_min": 5,
+       "actual_start": "",
+       "actual_end": "",
+       "status": "Pending",
+       "notes": "DBA step",
+       "command": "",
+       "rollback": "",
+       "expected": "",
+       "custom": {},
+       "team": ""
+      }
+     ]
+    }
+   ],
+   "created_by": "admin",
+   "created_at": "2026-11-21T15:44:31-06:00",
+   "updated_by": "admin",
+   "updated_at": "2026-11-21T15:44:31-06:00",
+   "owner_team": "DBA",
+   "shared_with": []
+  }
+ ],
+ "templates": [],
+ "audit": [
+  {
+   "Timestamp": "2026-11-21T15:44:31.336-06:00",
+   "User": "admin",
+   "Area": "Execution plans",
+   "Action": "Import",
+   "Target": "06_Execution_Plans.xlsx",
+   "Details": "06_Execution_Plans.xlsx: {'added': 8, 'updated': 0, 'skipped': 0}"
+  },
+  {
+   "Timestamp": "2026-11-21T15:44:32.329-06:00",
+   "User": "admin",
+   "Area": "Execution plans",
+   "Action": "Demo ownership",
+   "Target": "demo",
+   "Details": "demo plan ownership"
+  }
+ ]
+}

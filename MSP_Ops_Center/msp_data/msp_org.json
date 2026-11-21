@@ -1,0 +1,783 @@
+{
+ "format": 1,
+ "teams": {
+  "team_6f349f6919": {
+   "name": "Unix SA",
+   "description": "Linux and Solaris servers, storage and backup",
+   "leads": [
+    "arun.kumar",
+    "meera.pillai"
+   ],
+   "members": {
+    "arun.kumar": {
+     "projects": [
+      "prj_72a8b90b9a"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "meera.pillai": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_29567199c0",
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "suresh.babu": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_91cba4655b",
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "nikhil.jain": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_a9363a863d",
+      "prj_91cba4655b"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "farah.ali": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_484b6394ab",
+      "prj_123e92b650"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "rohit.das": {
+     "projects": [
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "lena.fox": {
+     "projects": [
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "vivek.nanda": {
+     "projects": [
+      "prj_72a8b90b9a",
+      "prj_484b6394ab",
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "chen.li": {
+     "projects": [
+      "prj_72a8b90b9a",
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "kavya.menon": {
+     "projects": [
+      "prj_72a8b90b9a",
+      "prj_29567199c0",
+      "prj_6e90f13e65"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "tom.berg": {
+     "projects": [
+      "prj_6e90f13e65",
+      "prj_d807ba3397",
+      "prj_484b6394ab"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "team_dd87ae32c8": {
+   "name": "Windows",
+   "description": "Windows servers, Active Directory, Citrix and VMware",
+   "leads": [
+    "karthik.reddy",
+    "anita.desai"
+   ],
+   "members": {
+    "karthik.reddy": {
+     "projects": [
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "anita.desai": {
+     "projects": [
+      "prj_edc55e5d67",
+      "prj_733d958e06",
+      "prj_433352b8c1"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "rahul.verma": {
+     "projects": [
+      "prj_93e47b0eea",
+      "prj_eeb71ff6d0",
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "mark.evans": {
+     "projects": [
+      "prj_e86494a056",
+      "prj_d807ba3397",
+      "prj_4c0cd5b078"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "deepa.krishnan": {
+     "projects": [
+      "prj_e86494a056",
+      "prj_edc55e5d67"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "sanjay.patel": {
+     "projects": [
+      "prj_b07fb654ba",
+      "prj_e86494a056"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "olivia.chen": {
+     "projects": [
+      "prj_b07fb654ba",
+      "prj_edc55e5d67"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "imran.sheikh": {
+     "projects": [
+      "prj_e86494a056",
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "pooja.nair": {
+     "projects": [
+      "prj_5126d1ab38"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "varun.mehta": {
+     "projects": [
+      "prj_e86494a056"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "ana.ito": {
+     "projects": [
+      "prj_4c0cd5b078",
+      "prj_edc55e5d67",
+      "prj_b07fb654ba"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "anjali.nair": {
+     "projects": [
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "team_fe41bf1268": {
+   "name": "DBA",
+   "description": "Oracle and SQL Server databases",
+   "leads": [
+    "priya.sharma",
+    "divya.menon"
+   ],
+   "members": {
+    "priya.sharma": {
+     "projects": [
+      "prj_433352b8c1",
+      "prj_a9363a863d"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "divya.menon": {
+     "projects": [
+      "prj_29567199c0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "chen.li": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_29567199c0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "sneha.iyer": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_eeb71ff6d0",
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "ashok.rao": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_93e47b0eea"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "neha.gupta": {
+     "projects": [
+      "prj_5126d1ab38",
+      "prj_d807ba3397",
+      "prj_edc55e5d67"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "joseph.mathew": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_93e47b0eea",
+      "prj_edc55e5d67"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "swati.kulkarni": {
+     "projects": [
+      "prj_5126d1ab38"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "daniel.kim": {
+     "projects": [
+      "prj_123e92b650",
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "ritu.saxena": {
+     "projects": [
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "manoj.pillai": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_d807ba3397",
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "grace.lee": {
+     "projects": [
+      "prj_484b6394ab",
+      "prj_5126d1ab38"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "team_ea6a38f1c5": {
+   "name": "Boomi",
+   "description": "Boomi integration platform",
+   "leads": [
+    "vikram.rao"
+   ],
+   "members": {
+    "vikram.rao": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_eeb71ff6d0",
+      "prj_edc55e5d67"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "imran.sheikh": {
+     "projects": [
+      "prj_eeb71ff6d0"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "omar.khan": {
+     "projects": [
+      "prj_edc55e5d67",
+      "prj_123e92b650"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "lakshmi.iyer": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "arjun.bose": {
+     "projects": [
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "sara.thomas": {
+     "projects": [
+      "prj_edc55e5d67",
+      "prj_733d958e06",
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "kiran.shetty": {
+     "projects": [
+      "prj_b07fb654ba"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "maya.singh": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_433352b8c1",
+      "prj_733d958e06"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "ravi.nair": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_433352b8c1"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "tanvi.joshi": {
+     "projects": [
+      "prj_b07fb654ba"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "ben.cole": {
+     "projects": [
+      "prj_d807ba3397"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "team_0d380ebdae": {
+   "name": "NOC",
+   "description": "24x7 monitoring, first response and network",
+   "leads": [
+    "anjali.nair",
+    "harish.kumar"
+   ],
+   "members": {
+    "anjali.nair": {
+     "projects": [
+      "prj_433352b8c1"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "harish.kumar": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_433352b8c1",
+      "prj_5126d1ab38"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "farah.ali": {
+     "projects": [
+      "prj_433352b8c1",
+      "prj_e86494a056",
+      "prj_6e90f13e65"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "rahul.verma": {
+     "projects": [
+      "prj_433352b8c1",
+      "prj_91cba4655b"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "dinesh.yadav": {
+     "projects": [
+      "prj_433352b8c1"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "aisha.khan": {
+     "projects": [
+      "prj_123e92b650",
+      "prj_a9363a863d",
+      "prj_6e90f13e65"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "george.paul": {
+     "projects": [
+      "prj_e86494a056",
+      "prj_72a8b90b9a",
+      "prj_4c0cd5b078"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "shruti.rao": {
+     "projects": [
+      "prj_72a8b90b9a"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "naveen.reddy": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_e86494a056",
+      "prj_93e47b0eea"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "emma.wright": {
+     "projects": [
+      "prj_4c0cd5b078",
+      "prj_a9363a863d",
+      "prj_5126d1ab38"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prakash.iyer": {
+     "projects": [
+      "prj_d807ba3397",
+      "prj_4c0cd5b078"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    },
+    "leah.morris": {
+     "projects": [
+      "prj_a9363a863d",
+      "prj_6e90f13e65",
+      "prj_433352b8c1"
+     ],
+     "added_by": "admin",
+     "added_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  }
+ },
+ "customers": {
+  "cus_d55901b012": {
+   "name": "Acme Corp",
+   "code": "ACME",
+   "teams": [
+    "team_0d380ebdae",
+    "team_6f349f6919",
+    "team_ea6a38f1c5",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_6f349f6919",
+   "projects": {
+    "prj_123e92b650": {
+     "name": "ERP platform",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_a9363a863d": {
+     "name": "Integration hub",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_aa2dcd8042": {
+   "name": "Globex",
+   "code": "GBX",
+   "teams": [
+    "team_0d380ebdae",
+    "team_dd87ae32c8",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_dd87ae32c8",
+   "projects": {
+    "prj_93e47b0eea": {
+     "name": "Retail data platform",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_5126d1ab38": {
+     "name": "Cloud and web",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_91a65cc6c3": {
+   "name": "Initech",
+   "code": "INI",
+   "teams": [
+    "team_6f349f6919",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_6f349f6919",
+   "projects": {
+    "prj_29567199c0": {
+     "name": "Core banking",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_449ed58bd4": {
+   "name": "Umbrella Health",
+   "code": "UMB",
+   "teams": [
+    "team_0d380ebdae",
+    "team_dd87ae32c8"
+   ],
+   "primary_team": "team_dd87ae32c8",
+   "projects": {
+    "prj_e86494a056": {
+     "name": "Clinical workspace",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_4c0cd5b078": {
+     "name": "Identity",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_1cccad81a3": {
+   "name": "Bluepeak Logistics",
+   "code": "BPL",
+   "teams": [
+    "team_ea6a38f1c5"
+   ],
+   "primary_team": "team_ea6a38f1c5",
+   "projects": {
+    "prj_5a10d304f2": {
+     "name": "Partner EDI",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_b36db7f154": {
+   "name": "Harbourline Retail",
+   "code": "HRL",
+   "teams": [
+    "team_0d380ebdae",
+    "team_6f349f6919",
+    "team_dd87ae32c8",
+    "team_ea6a38f1c5",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_6f349f6919",
+   "projects": {
+    "prj_d807ba3397": {
+     "name": "Store systems",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_6e90f13e65": {
+     "name": "Online shop",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_433352b8c1": {
+     "name": "Integration",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_4dfe89b534": {
+   "name": "Cobalt Labs",
+   "code": "CBL",
+   "teams": [
+    "team_6f349f6919",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_fe41bf1268",
+   "projects": {
+    "prj_484b6394ab": {
+     "name": "Research data",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_aa348daf6a": {
+   "name": "Greenfield Foods",
+   "code": "GFF",
+   "teams": [
+    "team_dd87ae32c8",
+    "team_ea6a38f1c5"
+   ],
+   "primary_team": "team_dd87ae32c8",
+   "projects": {
+    "prj_733d958e06": {
+     "name": "Plant systems",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_b07fb654ba": {
+     "name": "Supplier integration",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_e9ea553a29": {
+   "name": "Skyway Air",
+   "code": "SKY",
+   "teams": [
+    "team_0d380ebdae",
+    "team_6f349f6919"
+   ],
+   "primary_team": "team_6f349f6919",
+   "projects": {
+    "prj_91cba4655b": {
+     "name": "Flight ops",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_72a8b90b9a": {
+     "name": "Network",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  },
+  "cus_17bdaca902": {
+   "name": "Lumen Media",
+   "code": "LUM",
+   "teams": [
+    "team_dd87ae32c8",
+    "team_ea6a38f1c5",
+    "team_fe41bf1268"
+   ],
+   "primary_team": "team_dd87ae32c8",
+   "projects": {
+    "prj_edc55e5d67": {
+     "name": "Streaming platform",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    },
+    "prj_eeb71ff6d0": {
+     "name": "Billing",
+     "active": true,
+     "created_at": "2026-11-21T15:44:30-06:00"
+    }
+   },
+   "created_at": "2026-11-21T15:44:30-06:00",
+   "created_by": "admin"
+  }
+ },
+ "versions": [
+  {
+   "at": "2026-11-21T15:44:30-06:00",
+   "by": "admin",
+   "action": "Load demo teams",
+   "target": "demo",
+   "state": {
+    "teams": {},
+    "customers": {}
+   }
+  }
+ ],
+ "audit": [
+  {
+   "at": "2026-11-21T15:44:30-06:00",
+   "by": "admin",
+   "action": "Load demo teams",
+   "target": "demo"
+  }
+ ]
+}

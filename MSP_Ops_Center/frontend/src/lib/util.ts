@@ -1,0 +1,12 @@
+export const nk = (v: unknown) => String(v ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+export const truthy = (v: unknown) => ["yes", "y", "true", "1", "done", "x"].includes(String(v ?? "").trim().toLowerCase());
+export const CLOSED = ["resolved", "closed", "cancelled"];
+export const isOpen = (status: unknown) => !CLOSED.includes(String(status ?? "").toLowerCase());
+const p2 = (n: number) => String(n).padStart(2, "0");
+export const today = () => { const d = new Date(); return `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}`; };
+export const nowLocal = () => { const d = new Date(); return `${today()} ${p2(d.getHours())}:${p2(d.getMinutes())}`; };
+export const addDays = (iso: string, n: number) => { const d = new Date(iso + "T12:00:00"); d.setDate(d.getDate() + n);
+  return `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}`; };
+export const fmtTime = (iso: string) => { if (!iso) return ""; const d = new Date(iso);
+  return isNaN(+d) ? iso : d.toLocaleString([], { dateStyle: "medium", timeStyle: "short" }); };
+export const initials = (name: string) => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]!.toUpperCase()).join("");

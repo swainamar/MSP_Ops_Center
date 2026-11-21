@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Frontend build tooling
+node_modules/
+
+# Runtime backups
+MSP_Ops_Center/msp_data/backups/
+
+# Office lock files
+~$*
